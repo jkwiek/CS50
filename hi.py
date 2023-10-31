@@ -2,6 +2,6 @@
 name = input("what's your name? ")
 #remove whitespace from str
 name = name.strip()
-name = name.capitalize()
+name = name.title()
 #print output
 print(f"hello,{name}")

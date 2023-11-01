@@ -1,2 +1,1 @@
-print("enter input ")
-inp
+text = input(print("enter input "))

@@ -1,3 +1,3 @@
-x = int(input("what is x? "))
-y = int(input ("what is y? "))
+x = float(input("what is x? "))
+y = float(input ("what is y? "))
 print(x+y)

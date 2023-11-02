@@ -1,2 +1,3 @@
-text = input(print("enter input "))
+print("enter input ")
+input(print("enter input "))
 text.ascii_lowercase()

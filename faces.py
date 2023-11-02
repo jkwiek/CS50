@@ -1,12 +1,11 @@
 
 def main():
     face = input("face? ")
-    face = face.convert()
-    print(face)
+    print(face.convert())
 
-def convert(face):
+def convert():
     face = face.replace(":)","🙂").replace(":(","🙁")
 
-print(main)
+main()
 
 

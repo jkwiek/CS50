@@ -1,3 +1,4 @@
-text = input ("enter input? ")
-text = text.lower()
+outdoor = input("enter outdoor ")
+indoor = outdoor.lower()
 print({text})
+

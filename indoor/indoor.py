@@ -1,3 +1,3 @@
-print("enter input ")
+text = input(print("enter input "))
 input(print("enter input "))
-text.ascii_lowercase()
+text.lower()

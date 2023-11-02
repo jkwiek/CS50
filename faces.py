@@ -5,7 +5,7 @@ def main():
     print(face)
 
 def convert(face):
-    face = face.replace(":)","🙂").replace(":(","🙁")
+    face = face.replace(:),🙂).replace(:(,🙁)
 
 main()
 

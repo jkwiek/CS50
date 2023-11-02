@@ -1,5 +1,5 @@
 
-def main():
+def main(face):
     face = input("face? ")
     face = face.convert()
 

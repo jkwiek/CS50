@@ -1,3 +1,9 @@
-face=input("face? ")
-face = input.convert(":)","🙂").convert(":(","🙁")
-print(face)
+
+def(main):
+    face=input("face? ")
+    face = face.convert()
+
+def(convert):
+    face = face.replace(":)","🙂").replace(":(","🙁")
+
+print(main)

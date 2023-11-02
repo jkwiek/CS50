@@ -1,2 +1,3 @@
-text = {input ("enter input ")}.lower()
-print("text")
+text = input ("enter input? ")
+text = text.lower()
+print({text})

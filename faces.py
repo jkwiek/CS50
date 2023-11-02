@@ -1,6 +1,6 @@
 
 def main():
-    face=input("face? ")
+    face = input("face? ")
     face = face.convert()
 
 def convert():

@@ -1,11 +1,13 @@
 def main():
-    x = int9input("what's x? "))
+    x = int(input("what's x? "))
     if is_even(x):
         print("even")
     else:
         print("odd")
-def is_even
+def is_even (n):
     if n % 2 == 0:
-       bool
+       return True
+    else:
+        return False
 
 main()

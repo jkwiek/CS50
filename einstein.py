@@ -1,2 +1,2 @@
 val = int(input("m: "))
-print(val)
+val = val*

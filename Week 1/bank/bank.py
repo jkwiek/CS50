@@ -1,4 +1,4 @@
-greeting = input("Hey").strip().lower()
+greeting = input("Hey /n ").strip().lower()
 if greeting.startswith("hello"):
     print("$0")
 if greeting.startswith("h"):

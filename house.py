@@ -1,12 +1,8 @@
 name = input("What's your name? ")
 match name:
     case "Harry" | "Hermione" | "Ron":
-        print ("Gryffindor")
-    case "Hermione":
-        print ("Gryffindor")
-    case "Ron":
-        print ("Gryffindor")
+        print("Gryffindor")
     case "Draco":
-        print ("Gryffindor")
+        print("Slytherin")
     case _:
-        print ("Who?")
+        print("Who?")

@@ -7,12 +7,13 @@ def main():
 
 def dollars_to_float(d):
     dollars=input("How much was the meal? ")
-    dollars=float(dollars.removeprefix("$"))
+    dollars=float(dollars.removeprefix('$'))
     return(dollars)
 
 def percent_to_float(p):
     percent=input("What percentage would you like to tip? ")
-    percent=float(percent/100)
+    percent=float(percent.removesuffix('%'))
+    percent=percent/100
     return(percent)
 
 main()

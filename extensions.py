@@ -1,12 +1,12 @@
 filetype = input("file name: ")
-filetype = filetype.lower().strip().partition(".")[]
-if filetype == gif:
+filetype = filetype.lower().strip().partition(".")[2]
+if filetype == "gif":
     print("image/gif")
-elif filetype.endswith(".jpg") == True or filetype.endswith(".jpeg") == True:
+elif filetype == "jpg" or filetype == "jpeg":
     print("image/jpeg")
-elif filetype.endswith(".png") == True:
+elif filetype == "png":
     print("image/png")
-elif filetype.endswith(".pdf") == True:
+elif filetype == "pdf":
     print("application/pdf")
 elif filetype.endswith(".txt") == True:
     print("text/plain")

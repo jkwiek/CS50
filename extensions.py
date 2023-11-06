@@ -1,5 +1,5 @@
 filetype = input("file name: ")
-filetype = filetype.lower().strip()
+filetype = filetype.lower().strip().split("."[name,type])
 if filetype.endswith(".gif") == True:
     print("image/gif")
 elif filetype.endswith(".jpg") == True or filetype.endswith(".jpeg") == True:

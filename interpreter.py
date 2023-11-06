@@ -1,8 +1,8 @@
 x, y, z = input("expression: ").split(" ")
-x = int()
-z = int()
+x = x.int()
+z = z.int()
 if y == "+":
-    print(x+z)
+    print(f{.1(z)
 elif y == "-":
     print(x-z)
 elif y == "/":

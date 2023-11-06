@@ -8,9 +8,9 @@ elif filetype == "png":
     print("image/png")
 elif filetype == "pdf":
     print("application/pdf")
-elif filetype.endswith(".txt") == True:
+elif filetype == "txt":
     print("text/plain")
-elif filetype.endswith(".zip") == True:
+elif filetype == "zip":
     print("application/zip")
 else:
     print("application/octet-stream")

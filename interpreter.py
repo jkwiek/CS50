@@ -1,3 +1,2 @@
-expression = input().split(" ")
-[]
+x, y, z= input().split(" ")
 print(expression)

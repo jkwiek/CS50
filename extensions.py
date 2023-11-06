@@ -1,6 +1,6 @@
 filetype = input("file name: ")
 filetype = filetype.lower()
-case filetype.endswith(".gif".gif
+filetype.endswith(.gif""
 .jpg
 .jpeg
 .png

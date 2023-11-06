@@ -1,6 +1,7 @@
 filetype = input("file name: ")
 filetype = filetype.lower()
-filetype.endswith(.gif""
+if filetype.endswith(".gif") == True:
+    print()
 .jpg
 .jpeg
 .png

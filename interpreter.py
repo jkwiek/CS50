@@ -4,9 +4,8 @@ z = int(z)
 if y == "+":
     print(f"{(x+z):.1f}")
 elif y == "-":
-    print(x-z)
+    print(f"{(x-z):.1f}")
 elif y == "/":
-    print(x/z)
+    print(f"{(x/z):.1f}")
 elif y == "*":
-    print(x*z)
-
+    print(f"{(x*z):.1f}")

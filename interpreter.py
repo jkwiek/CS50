@@ -1,6 +1,6 @@
 x, y, z = input("expression: ").split(" ")
-x = x.int()
-z = z.int()
+x = int(x)
+z = int(z)
 if y == "+":
     print(f"{(x+z):.1f}")
 elif y == "-":

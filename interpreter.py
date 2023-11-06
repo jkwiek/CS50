@@ -1,1 +1,2 @@
-expression = input()
+expression = input().split(" ")
+print(expression)

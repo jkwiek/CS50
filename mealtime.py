@@ -4,6 +4,7 @@ def main():
     elif 12.00 <== time <== 13.00
         print ("lunch time")
     elif 18.00 <== time <== 19.00
+        print ("dinner time")
     #elif time ==
 #def convert(time):
 

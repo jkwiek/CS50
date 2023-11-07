@@ -15,7 +15,7 @@ def convert():
         hour = int(hour)+12
     else:
         hour = int(hour)
-    time = hour + minute/60
-    return(time)
+    value = hour + minute/60
+    return(value)
 
 main()

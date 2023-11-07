@@ -7,5 +7,6 @@
 #def convert(time):
 
 hour, minute = input("time: ").split(":")
-print (hour"."(int(minute)/60))
+minute = minute.in()
+time = hour + minute/60
 

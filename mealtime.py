@@ -8,10 +8,11 @@ def main():
 
 def convert():
     hour, minute, x = input("time: ").split(":").split(" ")
-        if x == "p.m.":
-            hour = int(hour)+12
-        else:
-            hour = int(hour)
     minute = int(minute)
-    time = hour+minute/60)
+    if x == "p.m.":
+        hour = int(hour)+12
+    else:
+        hour = int(hour)
+    time = hour+minute/60
 
+main()

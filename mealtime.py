@@ -9,5 +9,5 @@
 hour, minute = input("time: ").split(":")
 hour = int(hour)
 minute = int(minute)
-time = hour + "." + minute/60
+print(hour)
 

@@ -6,14 +6,14 @@ def main():
     elif 18.00 <= time <= 19.00:
         print ("dinner time")
 
-def convert(time):
+def convert():
     hour, minute, x = input("time: ").split(":").split(" ")
     minute = int(minute)
     if x == "p.m.":
         hour = int(hour)+12
     else:
         hour = int(hour)
-    time = hour+minute/60
-    return time
+    z = hour+minute/60
+    return z
 
 main()

@@ -1,6 +1,6 @@
 def main():
     convert()
-    if 7.00 <= time <= 8.00:
+    if 7.00 <=  <= 8.00:
         print ("breakfast time")
     elif 12.00 <= time <= 13.00:
         print ("lunch time")
@@ -14,7 +14,6 @@ def convert():
         hour = int(hour)+12
     else:
         hour = int(hour)
-    time = hour+minute/60
-    return time
+    return hour+minute/60
 
 main()

@@ -17,5 +17,4 @@ def convert():
     time = hour + minute/60
     return(time)
 
-
 main()

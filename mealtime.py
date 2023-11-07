@@ -8,9 +8,10 @@ def main():
         print ("dinner time")
 
 def convert():
-    time, section = input("time: ").split(' ').split(':')
+    time, part = input("time: ").split(' ')
+    hour, minute = time.split(':')
     minute = int(minute)
-    if x == "p.m.":
+    if part == "p.m.":
         hour = int(hour)+12
     else:
         hour = int(hour)

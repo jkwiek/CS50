@@ -6,6 +6,7 @@
     #elif time ==
 #def convert(time):
 
-hour, minute = input("time: ").split(":").int()
-time = hour + minute/60
+hour, minute = input("time: ").split(":")
+minute = int(minute)
+time = hour + "." + minute/60
 

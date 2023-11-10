@@ -8,14 +8,13 @@ def main():
         print ("dinner time")
 
 def convert():
-    hour, minute = time.split(':'):
+    hour, minute = time.split(':')
     if input("time: ").endswith("p.m."):
-        hour, minute = time.split(':').():
+        hour, minute = time.split(':').removesuffix("p.m.")
         hour = int(hour)+12
-    else
+    else:
+        hour, minute = time.split(':').rstrip("a.m.")
         hour = int(hour)
-    hour, minute = time.split(':'):
-    minute = int(minute)
 
     value = hour + minute/60
     return(value)
@@ -23,4 +22,3 @@ def convert():
 if __name__ == "__main__":
     main()
 
-str.endswith(suffix[, start[, end]])

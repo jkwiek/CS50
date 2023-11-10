@@ -1,5 +1,5 @@
-def main(time):
-    convert(time)
+def main():
+    convert()
     if 7.00 <= time <= 8.00 == True:
         print ("breakfast time")
     elif 12.00 <= time <= 13.00:
@@ -7,7 +7,7 @@ def main(time):
     elif 18.00 <= time <= 19.00:
         print ("dinner time")
 
-def convert(time):
+def convert():
     time = input("time: ")
     if time.endswith("p.m.")==True:
         hour, minute = time.split(':').removesuffix("p.m.")

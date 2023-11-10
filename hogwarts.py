@@ -1,3 +1,3 @@
 students = ['Hermione', 'Harry', 'Ron']
-for student in students:
+for i in students:
     print(student)

@@ -8,7 +8,7 @@ def main():
         print ("dinner time")
 
 def convert():
-    time, part = input("time: ").partition(" ")
+    time, half= input("time: ").partition(" ")
     hour, minute = time.split(':')
     minute = int(minute)
     if part == "p.m.":

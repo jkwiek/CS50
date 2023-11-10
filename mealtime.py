@@ -8,9 +8,9 @@ def main():
         print ("dinner time")
 
 def convert():
-    hour,minute = time.split(':')
+    hour,minute = input("time: ").split(":")
     time = int(hour) + int(minute)/60
-    return(int(time))
+    return(float(time))
 
 if __name__ == "__main__":
     main()

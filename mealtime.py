@@ -10,9 +10,7 @@ def main():
 
 def convert(time):
     hour,minute = time.split(":")
-    time = int(hour) + int(minute)/60
-    time = float(time)
-    return(time)
+    return (int(hour) + int(minute)/60)
 
 if __name__ == "__main__":
     main()

@@ -1,3 +1,3 @@
 students = ['Hermione', 'Harry', 'Ron']
-for i in students:
-    print(student)
+for i in range(len(students)):
+    print(students[i])

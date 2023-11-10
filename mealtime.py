@@ -11,6 +11,7 @@ def convert():
     time = input("time: ")
     if time.endswith("p.m.")==True:
         hour, minute = time.split(':').removesuffix("p.m.")
+        if hour = int(hour)= 12
         hour = int(hour)+12
         return(hour and minute)
     else:

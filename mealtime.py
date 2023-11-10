@@ -12,13 +12,12 @@ def convert():
     if time.endswith("p.m.")==True:
         hour, minute = time.split(':').removesuffix("p.m.")
         hour = int(hour)+12
-        return(hour, minute)
+        return(hour and minute)
     else:
         hour, minute = time.split(':').rstrip("a.m.")
         hour = int(hour)
-        return(hour, minute)
-
-    time = hour + minute/60
+        return(hour and minute)
+     return(hour + minute/60)
 
 if __name__ == "__main__":
     main()

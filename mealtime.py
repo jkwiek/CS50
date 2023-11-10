@@ -8,13 +8,14 @@ def main():
         print ("dinner time")
 
 def convert():
-    time, half = input("time: ").partition(" ")
-    hour, minute = time.split(':')
-    minute = int(minute)
-    if half == "p.m.":
+
+    if input("time: ").endswith("p.m."):
         hour = int(hour)+12
-    else:
+    else
         hour = int(hour)
+    hour, minute = time.split(':'):
+    minute = int(minute)
+
     value = hour + minute/60
     return(value)
 

@@ -9,16 +9,18 @@ def main():
 
 def convert():
     time = input("time: ").find(" ")
-    if input("time: ").find(" p.m.")
-        hour, minute = time.split(':').removesuffix("p.m.")
-        if hour = int(hour)= 12
-        hour = int(hour)+12
-        return(hour and minute)
+    if input("time: ").find(" p.m.") == True:
+        hour, minute = time.split(':').removesuffix(" p.m.")
+        if hour = int(hour) == 12:
+            hour = 12
+        else:
+            hour = int(hour)+12
     else:
-        hour, minute = time.split(':').rstrip("a.m.")
+        hour, minute = time.split(':').removesuffix(" a.m.")
         hour = int(hour)
-        return(hour and minute)
-     return(hour + minute/60)
+
+    x = hour + minute/60
+    return(x)
 
 if __name__ == "__main__":
     main()

@@ -10,7 +10,7 @@ def main():
 def convert():
     time = input("time: ")
     if " p.m." in time == True:
-        hour, minute = time.split(':').removesuffix(" p.m.")
+        hour, minute = time.removesuffix(" p.m.").split(':')
         if hour == "12":
             hour = int(12)
         else:

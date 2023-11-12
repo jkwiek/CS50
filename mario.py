@@ -1,6 +1,12 @@
 def main():
     printcolumn(3)
+    printrow(4)
 
 def printcolumn(height):
-    for _ in range(3):
-    print("#")
+    print("#\n" * height, end="")
+
+def printrow(row):
+    print("?" * row)
+
+main()
+

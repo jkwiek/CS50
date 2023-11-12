@@ -5,7 +5,7 @@ students = {
     'Draco: "Slytherin",
 }
 for student in students:
-    print(student,students[student])
+    print(student,students[student], sep=", ")
 print(students["Hermione:])
 'Hermione', 'Harry', 'Ron', 'Draco'
 

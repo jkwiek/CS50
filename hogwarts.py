@@ -4,7 +4,8 @@ students = {
     'Ron': "Gryffindor",
     'Draco: "Slytherin",
 }
-
+for student in students:
+    print(student,students[student])
 print(students["Hermione:])
 'Hermione', 'Harry', 'Ron', 'Draco'
 

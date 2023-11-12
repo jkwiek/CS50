@@ -1,5 +1,5 @@
 students = [
-    {"name":}
+    {"name": "Hermione", "house: "Gryffindor", "patronus": "Otter"},
 ]
 
 

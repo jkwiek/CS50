@@ -1,4 +1,9 @@
-students = {
+students = [
+    {"name":}
+]
+
+
+{
     'Hermione': "Gryffindor",
     'Harry': "Gryffindor",
     'Ron': "Gryffindor",

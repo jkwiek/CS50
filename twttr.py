@@ -8,3 +8,4 @@ for character in input:
         case _:
             print(character, sep="", end="")
 print("\n")
+

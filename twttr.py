@@ -1,6 +1,6 @@
 input = input("Input: ")
-for _ in input:
-    vowels = ["a","e","i","o","u"]
-    input = input.replace(vowels,"")
-    print(input)
-
+for character in input:
+    if character == "a" or "e" or "i" or "o" or "u":
+        print("")
+    else:
+        print(character)

@@ -7,5 +7,5 @@ for character in input:
             print("", end= "", sep="")
         case _:
             print(character, sep="", end="")
-
+    if 
 

@@ -1,5 +1,6 @@
 input = input("Input: ")
 for _ in input:
-    input = input.replace("a","e","i","o","u","")
+    vowels = ["a","e","i","o","u"]
+    input = input.replace(vowels,"")
     print(input)
 

@@ -11,7 +11,8 @@ def main():
 
 
 def is_valid(plate)):
-    plate
+    plate[:2].is
+
 
 
 main()

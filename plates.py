@@ -17,7 +17,8 @@ def is_valid(plate):
     plate[:2].isalpha(),
     2 <= len(plate) <= 6,
     for c in plate:
-        if 
+        if c.isnumber()
+            
     plate.rpartition(number)[2].isalpha(),
     }:
         return(True)

@@ -8,5 +8,9 @@ def printcolumn(height):
 def printrow(row):
     print("?" * row)
 
+def printsquare(size):
+    
+
+
 main()
 

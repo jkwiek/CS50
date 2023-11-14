@@ -9,7 +9,8 @@ def printrow(row):
     print("?" * row)
 
 def printsquare(size):
-    
+    for i in range(size):
+            print("#" * size)
 
 
 main()

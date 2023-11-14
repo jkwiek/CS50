@@ -12,18 +12,12 @@ def main():
 
 
 def is_valid(plate):
-    numbers = ["1","2","3","4","5","6","7","8","9"]
+    number = ["1","2","3","4","5","6","7","8","9"]
     if {
-    plate[:2].isalpha():
-    2 <= len(plate) <= 6
-    plate.rpartition(number)[1] = 
-    }
-
-
-    2 <= len(plate) <= 6
-        r
-
-
-
+    plate[:2].isalpha(),
+    2 <= len(plate) <= 6,
+    plate.rpartition(number)[2].isalpha(),
+    }:
+        return(True)
 
 main()

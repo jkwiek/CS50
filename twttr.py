@@ -3,6 +3,6 @@ print("Output: ", end="")
 
 for character in input:
     if character == "a" or "e" or "i" or "o" or "u":
-        print("", end="")
+        print("", end="", sep="")
     else:
-        print(character, end="")
+        print(character, end="", sep="")

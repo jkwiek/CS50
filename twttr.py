@@ -9,3 +9,5 @@ for character in input:
             print(character, sep="", end="")
     if character.rsplit() == character:
         print("\n")
+    else:
+        print("")

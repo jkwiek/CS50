@@ -12,11 +12,10 @@ def main():
 
 
 def is_valid(plate):
-    number = ["1","2","3","4","5","6","7","8","9"]
-    if plate[:2].isalpha():
+    if plate[:2].isalpha()
     and
-    if 2 <= len(plate) <= 6:
-        return True
+    2 <= len(plate) <= 6
+    and
     for c in plate:
         if c.isdigit():
             if plate.partition(c)[2].isalpha():

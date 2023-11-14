@@ -1,7 +1,7 @@
 input = input("Input: ")
 for character in input:
     if character == "a" or "e" or "i" or "o" or "u":
-        return("")
+        character = ""
     else:
-        return(character)
-print90
+        character = character
+    print(character, end="")

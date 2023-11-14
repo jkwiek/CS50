@@ -1,1 +1,2 @@
-input("camelCase: ").find()
+for _ in range(Z)
+input("camelCase: ")

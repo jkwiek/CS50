@@ -1,1 +1,1 @@
-input("camelCase: ")
+input("camelCase: ").find()

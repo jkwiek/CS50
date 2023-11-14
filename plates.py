@@ -11,7 +11,7 @@ def main():
 
 
 def is_valid(plate)):
-    ...
-
+    plate.partition()[1]
+    
 
 main()

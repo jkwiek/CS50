@@ -1,2 +1,4 @@
-for _ in range(Z)
-input("camelCase: ")
+variable = input("camelCase: ")
+section = 
+for section in variable:
+    print(section)

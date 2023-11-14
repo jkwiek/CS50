@@ -1,13 +1,8 @@
 input = input("Input: ")
 print("Output: ", end="")
-
+vowels = ["a","e","i","o","u"]
 for character in input:
-    match character:
-        case "a" | "e" | "i" | "o" | "u":
-            print("", end= "", sep="")
-        case _:
-            print(character, sep="", end="")
-    if character.rsplit() == character:
-        print("\n")
-    else:
-        print("")
+    if character in vowels:
+        print("", end= "")
+    if character not in vowels:
+        print(character, end= "")

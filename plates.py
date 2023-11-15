@@ -13,21 +13,23 @@ def main():
 
 def is_valid(plate):
     if lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate):
-        return (True)
+        print("True")
 
 def lengthvalid(plate):
-    2 <= len(plate) <= 6 == True
+    if 2 <= len(plate) <= 6:
+        print("True")
 
 def beginningvalid(plate):
-    plate[:2].isalpha() == True
+    if plate[:2].isalpha() == True:
+        print("True")
 
 def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
             if plate.rpartition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0"):
-                return(True)
+                print("True")
 
 def charactersvalid(plate):
-    plate.find("." or " " or "," or "!" or "?") == "-1"
-
+    if plate.find("." or " " or "," or "!" or "?") == "-1":
+        print("True")
 main()

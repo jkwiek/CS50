@@ -13,13 +13,13 @@ def main():
 
 def is_valid(plate):
     if lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate):
-        return(True)
+        return (True)
 
 def lengthvalid(plate):
-    2 <= len(plate) <= 6
+    2 <= len(plate) <= 6 == True
 
 def beginningvalid(plate):
-    plate[:2].isalpha()
+    plate[:2].isalpha() == True
 
 def numbersvalid(plate):
     for c in plate:
@@ -29,6 +29,5 @@ def numbersvalid(plate):
 
 def charactersvalid(plate):
     plate.find("." or " " or "," or "!" or "?") == "-1"
-
 
 main()

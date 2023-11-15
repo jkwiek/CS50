@@ -12,10 +12,23 @@ def main():
 
 
 def is_valid(plate):
-    if plate[:2].isalpha() and 2 <= len(plate) <= 6 and plate.find("." or " " or "," or "!" or "?")= "-1" and for c in plate:
-            if c.isdigit():
-                if plate.rpartition(c)[1].isalpha() and if plate.rpartition(c)[2].startswith(not "0"):
-    return True
+    if lengthvalid() and beginningvalid() and numbersvalid() and charactersvalid():
+        return(True)
+
+def lengthvalid():
+    2 <= len(plate) <= 6
+
+def beginningvalid():
+    plate[:2].isalpha()
+
+def numbersvalid():
+    for c in plate:
+        if c.isdigit():
+            if plate.rpartition(c)[1].isalpha(), and if plate.rpartition(c)[2].startswith(not "0"):
+                return(True)
+
+def charactersvalid():
+    plate.find("." or " " or "," or "!" or "?") == "-1"
 
 
 main()

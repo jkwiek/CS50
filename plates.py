@@ -24,7 +24,7 @@ def beginningvalid():
 def numbersvalid():
     for c in plate:
         if c.isdigit():
-            if plate.rpartition(c)[1].isalpha(), and if plate.rpartition(c)[2].startswith(not "0"):
+            if plate.rpartition(c)[1].isalpha(), and if not plate.rpartition(c)[2].startswith("0"):
                 return(True)
 
 def charactersvalid():

@@ -17,19 +17,20 @@ def is_valid(plate):
 
 def lengthvalid(plate):
     if 2 <= len(plate) <= 6:
-        print("True")
+        return True
 
 def beginningvalid(plate):
     if plate[:2].isalpha() == True:
-        print("True")
+        return True
 
 def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
             if plate.rpartition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0"):
-                print("True")
+                return True
 
 def charactersvalid(plate):
     if plate.find("." or " " or "," or "!" or "?") == "-1":
-        print("True")
+        return True
+
 main()

@@ -15,19 +15,19 @@ def is_valid(plate):
     if lengthvalid() and beginningvalid() and numbersvalid() and charactersvalid():
         return(True)
 
-def lengthvalid():
+def lengthvalid(plate):
     2 <= len(plate) <= 6
 
-def beginningvalid():
+def beginningvalid(plate):
     plate[:2].isalpha()
 
-def numbersvalid():
+def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
-            if plate.rpartition(c)[1].isalpha(), and if not plate.rpartition(c)[2].startswith("0"):
+            if plate.rpartition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0"):
                 return(True)
 
-def charactersvalid():
+def charactersvalid(plate):
     plate.find("." or " " or "," or "!" or "?") == "-1"
 
 

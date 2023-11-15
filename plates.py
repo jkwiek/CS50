@@ -12,10 +12,10 @@ def main():
 
 
 def is_valid(plate):
-    if plate[:2].isalpha() and 2 <= len(plate) <= 6 and for c in plate:
+    if plate[:2].isalpha() and 2 <= len(plate) <= 6 and and for c in plate:
             if c.isdigit():
                 if plate.rpartition(c)[1].isalpha()
-                if plate.rpartition(c)
+                if plate.rpartition(c)[2].startswith(not "0")
 
     return True
 

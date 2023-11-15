@@ -27,14 +27,10 @@ def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
             if plate.rpartition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0"):
-                print([1],[2])
+                return True
 
 def charactersvalid(plate):
     if plate.find(".", " ", ",", "!", "?") == "-1":
         return True
 
 main()
-for c in plate:
-        if c.isdigit():
-            if plate.rpartition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0"):
-                print([1],[2])

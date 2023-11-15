@@ -12,7 +12,7 @@ def main():
 
 
 def is_valid(plate):
-    if lengthvalid() and beginningvalid() and numbersvalid() and charactersvalid():
+    if lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate):
         return(True)
 
 def lengthvalid(plate):

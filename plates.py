@@ -11,22 +11,26 @@ def main():
         print("Invalid")
 
 def is_valid(plate):
-    lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate)
+    if lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate)
 
 def lengthvalid(plate):
-    2 <= len(plate) <= 6
+    if 2 <= len(plate) <= 6:
+        return True
 
 def beginningvalid(plate):
-    plate[:2].isalpha()
+    if plate[:2].isalpha():
+        return True
+
 
 def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
             numbers = plate.split(sep = c,maxsplit=1)[1]
             if numbers.isdigit() and c != "0":
-                return(True)
+                return True
 
 def charactersvalid(plate):
-    plate.find(".", " ", ",", "!", "?") == "-1"
+    plate.find(".", " ", ",", "!", "?") == "-1":
+        return True
 
 main()

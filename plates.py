@@ -31,7 +31,7 @@ def numbersvalid(plate):
                 return True
 
 def charactersvalid(plate):
-    plate.find(".", " ", ",", "!", "?") == "-1":
+    if plate.find(".", " ", ",", "!", "?") == "-1":
         return True
 
 main()

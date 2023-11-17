@@ -22,7 +22,7 @@ def beginningvalid(plate):
 def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
-            print(plate.split(sep=c,maxsplit=1)[1])
+            plate.split((sep=c,maxsplit=1)[1]).isdigit()
 
 def charactersvalid(plate):
     plate.find(".", " ", ",", "!", "?") == "-1"

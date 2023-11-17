@@ -32,8 +32,8 @@ def numbersvalid(plate):
 
 def charactersvalid(plate):
     characters=[".", " ", ",", "!", "?"]
-    for c in plate:
-        if c in characters:
+    for char in characters:
+        if char in plate:
             return True
 
 main()

@@ -24,7 +24,6 @@ def numbersvalid(plate):
         if c.isdigit():
             plate.rpartition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0")
 
-
 def charactersvalid(plate):
     plate.find(".", " ", ",", "!", "?") == "-1"
 

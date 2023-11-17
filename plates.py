@@ -10,18 +10,14 @@ def main():
     else:
         print("Invalid")
 
-
 def is_valid(plate):
-    if lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate):
-        print("True")
+    lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate)
 
 def lengthvalid(plate):
-    if 2 <= len(plate) <= 6:
-        return True
+    2 <= len(plate) <= 6
 
 def beginningvalid(plate):
-    if plate[:2].isalpha() == True:
-        return True
+    plate[:2].isalpha() == True
 
 def numbersvalid(plate):
     for c in plate:
@@ -30,7 +26,6 @@ def numbersvalid(plate):
                 return True
 
 def charactersvalid(plate):
-    if plate.find(".", " ", ",", "!", "?") == "-1":
-        return True
+    plate.find(".", " ", ",", "!", "?") == "-1"
 
 main()

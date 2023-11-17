@@ -23,7 +23,8 @@ def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
             numbers = plate.split(sep = c,maxsplit=1)[1]
-            numbers.isdigit() and c != "0"
+            if numbers.isdigit() and c != "0":
+                return(True)
 
 def charactersvalid(plate):
     plate.find(".", " ", ",", "!", "?") == "-1"

@@ -22,10 +22,8 @@ def beginningvalid(plate):
 def numbersvalid(plate):
     for c in plate:
         if c.isdigit():
-            numbers = late.split((sep=c,maxsplit=1)[1]).is
-            
-            plate.split((sep=c,maxsplit=1)[1]).isdigit()
-            plate.
+            numbers = plate.split((sep=c,maxsplit=1)[1])
+            numbers.isdigit()
 
 def charactersvalid(plate):
     plate.find(".", " ", ",", "!", "?") == "-1"

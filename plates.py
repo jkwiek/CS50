@@ -44,7 +44,7 @@ def charactersvalid(plate):
     characters=[".", " ", ",", "!", "?"]
     for char in characters:
         if char in plate:
-            print("True")
+            
             return False
     else:
         return True

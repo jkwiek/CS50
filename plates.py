@@ -41,6 +41,8 @@ def numbersvalid(plate):
             else:
                 print("FalseD")
                 return False
+        else:
+            return True
 
 def charactersvalid(plate):
     characters=[".", " ", ",", "!", "?"]

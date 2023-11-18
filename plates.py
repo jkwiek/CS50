@@ -13,9 +13,7 @@ def main():
 def is_valid(plate):
     if lengthvalid(plate)==True and beginningvalid(plate)==True and numbersvalid(plate)==True and charactersvalid(plate)==True:
         return True
-    else:
-        print("FalseA")
-
+    
 def lengthvalid(plate):
     if 2 <= len(plate) <= 6:
         return True

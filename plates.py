@@ -21,14 +21,10 @@ def lengthvalid(plate):
         print("True")
         return True
     else:
-        print("FalseC")
 
 def beginningvalid(plate):
     if plate[:2].isalpha():
-        print("True")
         return True
-    else:
-        print("FalseB")
 
 
 def numbersvalid(plate):
@@ -36,17 +32,12 @@ def numbersvalid(plate):
         if c.isdigit():
             numbers = plate.split(sep = c,maxsplit=1)[1]
             if numbers.isdigit() and c != "0":
-                print("True")
                 return True
-
 
 def charactersvalid(plate):
     characters=[".", " ", ",", "!", "?"]
     for char in characters:
-        if char in plate:
-            
-            return False
-    else:
-        return True
+        if char not in plate:
+            return True
 
 main()

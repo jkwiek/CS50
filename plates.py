@@ -5,7 +5,7 @@
 #“No periods, spaces, or punctuation marks are allowed.”
 def main():
     plate = input("Plate: ")
-    if is_valid(plate) == True:
+    if is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
@@ -15,18 +15,21 @@ def is_valid(plate):
         return True
     else:
         print("FalseA")
+        return False
 
 def lengthvalid(plate):
     if 2 <= len(plate) <= 6:
         return True
     else:
         print("FalseB")
+        return False
 
 def beginningvalid(plate):
     if plate[:2].isalpha():
         return True
     else:
         print("FalseC")
+        return False
 
 
 def numbersvalid(plate):
@@ -37,6 +40,7 @@ def numbersvalid(plate):
                 return True
             else:
                 print("FalseD")
+                return False
 
 def charactersvalid(plate):
     characters=[".", " ", ",", "!", "?"]
@@ -45,5 +49,6 @@ def charactersvalid(plate):
             return True
         else:
             print("FalseE")
+            return False
 
 main()

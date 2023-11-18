@@ -13,14 +13,10 @@ def main():
 def is_valid(plate):
     if lengthvalid(plate)==True and beginningvalid(plate)==True and numbersvalid(plate)==True and charactersvalid(plate)==True:
         return True
-    else:
-        return False
 
 def lengthvalid(plate):
     if 2 <= len(plate) <= 6:
-        print("True")
         return True
-    else:
 
 def beginningvalid(plate):
     if plate[:2].isalpha():

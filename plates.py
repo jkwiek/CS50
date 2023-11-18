@@ -34,7 +34,7 @@ def numbersvalid(plate):
         if c.isdigit():
             numbers = plate.split(sep = c,maxsplit=1)[1]
             if numbers.isdigit() and c != "0":
-                print("True")
+                return True
 
 
 def charactersvalid(plate):

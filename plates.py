@@ -28,7 +28,6 @@ def beginningvalid(plate):
     else:
         return False
 
-
 def numbersvalid(plate):
     for c in plate:
         if c.isdigit():

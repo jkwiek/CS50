@@ -45,8 +45,8 @@ def charactersvalid(plate):
     for char in characters:
         if char in plate:
             print("True")
-            return True
+            return False
     else:
-        print("FalseA")
+        return True
 
 main()

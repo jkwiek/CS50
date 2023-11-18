@@ -3,9 +3,10 @@ for c in plate:
     if c.isdigit():
         numbers = plate.split(sep = c,maxsplit=1)[1]
         if numbers.isdigit() and c != "0":
-            return True
+            print("True")
         else:
-            return False
+            print("False")
+
 
 
 #if plate.partition(c)[1].isalpha() and not plate.rpartition(c)[2].startswith("0"):

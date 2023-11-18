@@ -4,8 +4,6 @@ for c in plate:
         numbers = plate.split(sep = c,maxsplit=1)[1]
         if numbers.isdigit() and c != "0":
             print("True")
-        else:
-            print("False")
 
 
 

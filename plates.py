@@ -41,11 +41,8 @@ def numbersvalid(plate):
             return
 
 def charactersvalid(plate):
-    characters=[".", " ", ",", "!", "?"]
-    for char in characters:
-        if char not in plate:
-            return True
-        else:
-            return False
-    if plate.isalphanum()
+    if plate.isalnum():
+        return True
+    else:
+        return False
 main()

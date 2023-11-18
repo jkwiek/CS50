@@ -37,8 +37,8 @@ def numbersvalid(plate):
                 return True
             else:
                 return False
-        else:
-            return True
+        if plate.isalpha():
+            return
 
 def charactersvalid(plate):
     characters=[".", " ", ",", "!", "?"]
@@ -47,5 +47,5 @@ def charactersvalid(plate):
             return True
         else:
             return False
-
+    if plate.isalphanum()
 main()

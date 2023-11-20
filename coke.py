@@ -4,10 +4,8 @@
 #Once the user has inputted at least 50 cents, output how many cents in change the user is owed.
 #Assume that the user will only input integers, and ignore any integer that isn’t an accepted denomination.
 print("Amount Due: 50")
-for coin in coins
 coin = int(input("Insert Coin: "))
-cointotal = coin
-if cointotal <= 50
-    print ("Amount Due: ", 50-cointotal)
-
-Change
+if coin <= 50
+    print ("Amount Due: ", 50 - coin)
+    print("Insert Coin: ")
+Change Owed

@@ -21,4 +21,4 @@ fruits = {
     "watermelon":"80"
 }
 fruit = input("Item: ").lower()
-
+print("Calories: ", )

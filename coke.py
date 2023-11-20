@@ -9,3 +9,6 @@ if coin <= 50
     print ("Amount Due: ", 50 - coin)
     print("Insert Coin: ")
 Change Owed
+while coinsum < 50
+    lkj
+    coinsum = 

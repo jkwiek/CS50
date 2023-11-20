@@ -13,20 +13,14 @@ def main():
 def is_valid(plate):
     if lengthvalid(plate) and beginningvalid(plate) and numbersvalid(plate) and charactersvalid(plate):
         return True
-    else:
-        return False
 
 def lengthvalid(plate):
     if 2 <= len(plate) <= 6:
         return True
-    else:
-        return False
 
 def beginningvalid(plate):
     if plate[:2].isalpha():
         return True
-    else:
-        return False
 
 def numbersvalid(plate):
     for c in plate:
@@ -34,14 +28,10 @@ def numbersvalid(plate):
             numbers = plate.split(sep = c,maxsplit=1)[1]
             if numbers.isdigit() and c != "0":
                 return True
-            else:
-                return False
         if plate.isalpha():
-            return
+            return True
 
 def charactersvalid(plate):
     if plate.isalnum():
         return True
-    else:
-        return False
 main()

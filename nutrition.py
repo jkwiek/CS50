@@ -20,4 +20,5 @@ fruits = {
     "tangerine":"50"
     "watermelon":"80"
 }
-fruit = input()
+fruit = input("Item: ").lower()
+

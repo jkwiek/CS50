@@ -13,5 +13,5 @@ while coinsum < 50:
             if remainder < 0:
                 remainder = 0
         print ("Amount Due:", remainder)
-if coinsum >= 50:
-    print("Change Owed:", coinsum - 50)
+        
+print("Change Owed:", coinsum - 50)

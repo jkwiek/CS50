@@ -6,7 +6,7 @@
 coinsum=0
 while coinsum < 50:
     coin = int(input("Insert Coin: "))
-    coins: [5,10,25]
+    coins: ["5","10","25"]
     if coin in coins:
         print ("Amount Due: ", 50 - coin)
     coinsum = coinsum+coin

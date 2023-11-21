@@ -10,5 +10,5 @@ while coinsum < 50:
     if coin in coins:
         coinsum += coin
         print ("Amount Due:", 50 - coinsum)
-for coinsum >= 50:
+if coinsum >= 50:
     print("Change Owed:", coinsum - 50)

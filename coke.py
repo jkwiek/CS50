@@ -4,10 +4,12 @@
 #Once the user has inputted at least 50 cents, output how many cents in change the user is owed.
 #Assume that the user will only input integers, and ignore any integer that isn’t an accepted denomination.
 coinsum=0
-while coinsum < 50:
+while coinsum() < 50:
     coin = int(input("Insert Coin: "))
-    coins = ["5","10","25"]
+    coins = [5,10,25]
     if coin in coins:
-        print ("Amount Due: ", 50 - coin)
+        print ("Amount Due:", 50 - coinsum)
     coinsum = coinsum+coin
 
+def coinsum():
+    coinsum = coinsum+coin

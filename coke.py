@@ -9,7 +9,6 @@ while coinsum() < 50:
     coins = [5,10,25]
     if coin in coins:
         print ("Amount Due:", 50 - coinsum)
-    coinsum = coinsum+coin
 
 def coinsum():
     coinsum = coinsum+coin

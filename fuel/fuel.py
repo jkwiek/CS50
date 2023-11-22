@@ -1,4 +1,5 @@
-x,y = int(input("Fraction: ").split("/"))
+
+    x,y = input("Fraction: ").split("/")
 
 #except:
 

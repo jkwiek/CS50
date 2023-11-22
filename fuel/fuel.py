@@ -1,6 +1,7 @@
-try:
-    x,y = input("Fraction: ").split("/")
-except:
+#try:
+x,y = input("Fraction: ").partition("/")
+print("x")
+#except:
 
-else:
+#else:
 

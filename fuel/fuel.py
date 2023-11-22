@@ -1,7 +1,7 @@
-
+try:
     x,y = input("Fraction: ").split("/")
+    result = int(x) / int(y)
+except:
 
-#except:
-
-#else: print(int(x)/int(y)*100)
-
+else:
+    

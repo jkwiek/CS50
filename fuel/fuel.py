@@ -6,4 +6,4 @@ while True:
         continue
     else:
         break
-print(f"{result:1f}", "%", sep="")
+print(f"{result:f}", "%", sep="")

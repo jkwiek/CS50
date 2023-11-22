@@ -2,18 +2,20 @@ while True:
     try:
         x,y = input("Fraction: ").split("/")
         result = int(x) / int(y) * 100
-        if 0 <= result < 1:
-                print("E")
-                break
-        elif 99 <= result <= 100:
-                print("F")
-                break
-        elif result <0 or result >100:
-                continue
     except(ValueError, ZeroDivisionError):
+        continue
+    if result <0 or result >100:
         continue
     else:
         break
-result = round(result)
-print(result, "%", sep="")
+
+if result <= 1:
+    print("E")
+
+elif result >=99:
+    print("F")
+
+else:
+    result = round(result)
+    print(result, "%", sep="")
 

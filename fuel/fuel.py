@@ -6,4 +6,6 @@ while True:
         continue
     else:
         break
-print(f"{result:f}", "%", sep="")
+result = round(result[1])
+print(result, "%", sep="")
+

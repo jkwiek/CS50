@@ -6,6 +6,6 @@ while True:
         continue
     else:
         break
-result = round(result[1])
+result = round(result)
 print(result, "%", sep="")
 

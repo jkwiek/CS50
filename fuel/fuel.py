@@ -3,8 +3,7 @@ while True:
         x,y = input("Fraction: ").split("/")
         result = int(x) / int(y) * 100
         if 0 <= result < 1:
-                print("E")
-                break
+                
         elif 99 <= result <= 100:
                 print("F")
                 break

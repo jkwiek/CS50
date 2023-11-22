@@ -2,6 +2,7 @@ try:
     x,y = input("Fraction: ").split("/")
     result = int(x) / int(y)
 except:
-    what 
+while True:
+    
 else:
     print(result*100)

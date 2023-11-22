@@ -6,4 +6,4 @@ while True:
         continue
     else:
         break
-print(result*100, "%", sep="")
+print(f"result*100", "%", sep="")

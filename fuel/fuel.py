@@ -4,4 +4,4 @@ try:
 except:
 
 else:
-    
+    print(result*100)

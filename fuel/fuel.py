@@ -1,5 +1,5 @@
 #try:
-x,y = input("Fraction: ").partition("/")
+x, y = input("Fraction: ").partition("/")
 print("x")
 #except:
 

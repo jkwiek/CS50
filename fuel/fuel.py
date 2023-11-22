@@ -1,13 +1,8 @@
-try:
-    x,y = input("Fraction: ").split("/")
-    result = int(x) / int(y)
-except:
 while True:
     try:
         x,y = input("Fraction: ").split("/")
         result = int(x) / int(y)
-        
+    except:
+        continue
     else:
-        break
-else:
-    print(result*100)
+        print(result*100)

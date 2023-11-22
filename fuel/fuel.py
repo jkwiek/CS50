@@ -5,4 +5,5 @@ while True:
     except:
         continue
     else:
-        print(result*100)
+        break
+print(result*100, "%", sep="")

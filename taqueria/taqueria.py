@@ -11,12 +11,12 @@ entrees=[
 ]
 
 while True:
-try:
-    input("Item: ").title() in entrees
-
-except ValueError:
-
-except EOFError:
+    try:
+        input("Item: ").title() in entrees
+        return key
+    except ValueError:
+        continue
+    except EOFError:
 
 
 else:

@@ -18,5 +18,5 @@ while True:
     except EOFError:
         break
     else:
-        print(entrees[price])
+        print([entr])
 

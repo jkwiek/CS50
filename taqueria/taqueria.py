@@ -18,7 +18,3 @@ while True:
         continue
     except EOFError:
         break
-
-
-
-else:

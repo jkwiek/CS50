@@ -13,8 +13,10 @@ entrees=[
 while True:
     try:
         input("Item: ").title() in entrees
-        [entree]
     except ValueError:
         continue
     except EOFError:
         break
+    else:
+        print([entrees])
+

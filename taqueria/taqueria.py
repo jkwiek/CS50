@@ -14,11 +14,10 @@ while True:
     try:
         item = input("Item: ").title()
         printTotal(entrees[item])
-        return entrees[item]
     except (ValueError, KeyError):
         continue
     except EOFError:
         print("\n")
         break
 
-printTotal():
+printTotal(x):

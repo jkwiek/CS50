@@ -13,7 +13,7 @@ entrees={
 while True:
     try:
         item = input("Item: ").title()
-        print(entrees[key])
+        print(entrees[item])
     except (ValueError, KeyError):
         continue
     except EOFError:

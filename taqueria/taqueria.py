@@ -20,7 +20,7 @@ while True:
         print("\n")
         break
 
-printTotal(x):
+def printTotal(x):
     itemsum = 0
     itemsum += entrees[item]
-    print("$", itemsum:.2f )
+    print("$", itemsum:.2f)

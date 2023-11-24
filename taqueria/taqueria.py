@@ -16,8 +16,8 @@ while True:
     except ValueError:
         continue
     except EOFError:
-        print(/n)
+        print(\n)
         break
     else:
-        print([entr])
+        print(entrees)
 

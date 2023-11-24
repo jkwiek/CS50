@@ -13,14 +13,15 @@ entrees={
 while True:
     try:
         item = input("Item: ").title()
-        printTotal(entrees[item])
+        price = entrees[item]
+        printTotal(price)
     except (ValueError, KeyError):
         continue
     except EOFError:
         print("\n")
         break
 
-def printTotal(entrees[item]):
+def printTotal(price):
     itemsum = 0
     itemsum += float(entrees[item])
     print("Total: $", itemsum)

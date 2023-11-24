@@ -12,8 +12,8 @@ entrees={
 
 while True:
     try:
-        Item = input("Item: ").title() 
-
+        item = input("Item: ").title()
+        get item[key]
     except (ValueError, KeyError):
         continue
     except EOFError:

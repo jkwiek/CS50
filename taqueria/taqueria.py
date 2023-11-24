@@ -10,6 +10,11 @@ entrees={
     "Tortilla Salad": 8.00
 }
 
+def printTotal(price):
+    itemsum = 0
+    itemsum += float(price)
+    print("Total: $", itemsum)
+
 while True:
     try:
         item = input("Item: ").title()
@@ -21,7 +26,4 @@ while True:
         print("\n")
         break
 
-def printTotal(price):
-    itemsum = 0
-    itemsum += float(price)
-    print("Total: $", itemsum)
+

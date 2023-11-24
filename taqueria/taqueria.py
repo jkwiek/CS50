@@ -20,5 +20,4 @@ while True:
         print("\n")
         break
     else:
-        print(entrees[entrees])
-
+        print(entrees[price])

@@ -12,8 +12,9 @@ entrees={
 
 while True:
     try:
-        input("Item: ").title() in entrees
-    except ValueError:
+        Item = input("Item: ").title() 
+
+    except (ValueError, KeyError):
         continue
     except EOFError:
         print("\n")

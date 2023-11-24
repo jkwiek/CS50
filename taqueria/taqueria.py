@@ -18,4 +18,4 @@ while True:
         continue
     except EOFError:
         print("\n")
-        break
+        breakasdfj;k

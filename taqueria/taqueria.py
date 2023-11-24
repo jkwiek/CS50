@@ -19,5 +19,5 @@ while True:
         print("\n")
         break
     else:
-        print(entrees)
+        print(entrees[entrees])
 

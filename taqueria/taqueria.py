@@ -13,9 +13,12 @@ entrees={
 while True:
     try:
         item = input("Item: ").title()
-        print(entrees[item])
+        printTotal()
+        return entrees[item]
     except (ValueError, KeyError):
         continue
     except EOFError:
         print("\n")
-        breakasdfj;k
+        break
+    
+printTotal():

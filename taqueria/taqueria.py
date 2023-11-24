@@ -23,4 +23,4 @@ while True:
 printTotal(x):
     itemsum = 0
     itemsum += entrees[item]
-    print("$", itemsum, )
+    print("$", itemsum:.2f )

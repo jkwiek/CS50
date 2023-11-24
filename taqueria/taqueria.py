@@ -23,7 +23,7 @@ while True:
     except (ValueError, KeyError):
         continue
     except EOFError:
-        print("\n")
+        print()
         break
 
 

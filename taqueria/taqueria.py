@@ -12,8 +12,7 @@ entrees={
 
 def printTotal(item):
     price = entrees[item]
-    if item in entrees:
-        itemsum += float(price)
+    itemsum += float(price)
     print("Total: $", itemsum, sep="")
 
 while True:

@@ -11,6 +11,7 @@ entrees={
 }
 
 def printTotal(item):
+    itemsum=0
     price = entrees[item]
     itemsum += float(price)
     print("Total: $", itemsum, sep="")

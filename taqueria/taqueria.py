@@ -11,10 +11,10 @@ entrees={
 }
 
 def printTotal(price):
+    itemsum = 0
     for price:
-        itemsum = 0
-    itemsum += float(price)
-    print("Total: $", itemsum, sep="")
+        itemsum += float(price)
+        print("Total: $", itemsum, sep="")
 
 while True:
     try:

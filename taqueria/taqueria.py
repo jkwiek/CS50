@@ -10,17 +10,18 @@ entrees={
     "Tortilla Salad": 8.00
 }
 
-def printTotal(price):
+def printTotal(item):
+    price = entrees[item]
     itemsum = 0
-    for price:
+    for item in entrees:
         itemsum += float(price)
         print("Total: $", itemsum, sep="")
 
 while True:
     try:
         item = input("Item: ").title()
-        price = entrees[item]
-        printTotal(price)
+        item in entrees
+        printTotal(item)
     except (ValueError, KeyError):
         continue
     except EOFError:

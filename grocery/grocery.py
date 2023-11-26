@@ -1,3 +1,4 @@
+#groceries[key]=value
 groceries={}
 while True:
     try:
@@ -6,7 +7,7 @@ while True:
         break
     else:
         if item in groceries:
-            groceries[key]+=1
+            groceries[item]+=1
         else:
             groceries["1"]=item
 print(groceries)

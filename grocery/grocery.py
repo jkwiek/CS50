@@ -3,5 +3,5 @@ while True:
         foods = input().split("\n")
     except EOFError:
         break
-print(foods)
+foods
 #capitalize, number, alphabetize, print

@@ -4,7 +4,7 @@ while True:
     except EOFError:
         break
     else:
-        amount = 
+        amount = count()
         list[]=food
         print(list)
 

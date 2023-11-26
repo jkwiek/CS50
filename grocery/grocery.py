@@ -1,7 +1,8 @@
 while True:
     try:
-        foods = input().split("\n")
+        food = input()
     except EOFError:
         break
-foods
+list={food}
+print(food)
 #capitalize, number, alphabetize, print

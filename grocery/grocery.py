@@ -6,7 +6,7 @@ while True:
     else:
         amount = list.count(food)
         list ={}
-        list[]=food
+        list[amount]=food
         print(list)
 
 #capitalize, number, alphabetize, print

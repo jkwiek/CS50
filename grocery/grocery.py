@@ -1,12 +1,13 @@
 groceries={}
+groceries[amount]=food
 while True:
     try:
-        food = input()
+        item= input()
     except EOFError:
         break
     else:
-        amount = groceries.count(food)
-        groceries[amount]=food
+        if item in groceries:
+            groceries[amount]=+1
         print(groceries)
 
 #capitalize, number, alphabetize, print

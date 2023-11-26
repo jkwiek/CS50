@@ -6,7 +6,7 @@ while True:
         break
     else:
         if item in groceries:
-            groceries[amount]+=1
+            groceries[key]+=1
         else:
             groceries["1"]=item
 print(groceries)

@@ -9,7 +9,7 @@ while True:
         if item in groceries:
             groceries[item]+=1
         else:
-            groceries["1"]=item
+            groceries[item]=1
 print(groceries)
 
 #capitalize, number, alphabetize, print

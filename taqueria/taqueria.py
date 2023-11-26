@@ -23,7 +23,7 @@ while True:
         break
     else:
         itemsum += float(price)
-        print("Total: $", {itemsum: .2f}, sep="")
+        print(f"Total: ${itemsum:.2f}")
 
 
 

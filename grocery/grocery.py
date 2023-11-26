@@ -4,7 +4,8 @@ while True:
     except EOFError:
         break
     else:
-        put food in list{}
-list={food}
-print(food)
+        amount = 
+        list[]=food
+        print(list)
+
 #capitalize, number, alphabetize, print

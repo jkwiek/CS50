@@ -1,4 +1,5 @@
 groceries={}
+groceries[amount]
 while True:
     try:
         item = input()

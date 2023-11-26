@@ -15,15 +15,15 @@ itemsum = 0
 while True:
     try:
         item = input("Item: ").title()
+        price = entrees[item]
     except (ValueError, KeyError):
         continue
     except EOFError:
         print()
         break
     else:
-        price = entrees[item]
         itemsum += float(price)
-        print("Total: $", itemsum, sep="")
+        print("Total: $", {itemsum: .2f}, sep="")
 
 
 

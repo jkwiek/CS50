@@ -10,10 +10,10 @@ entrees={
     "Tortilla Salad": 8.00
 }
 
-itemsum=0
 
 def printTotal(item):
     price = entrees[item]
+    itemsum = 0
     itemsum += float(price)
     print("Total: $", itemsum, sep="")
 

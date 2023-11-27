@@ -1,5 +1,5 @@
 print(f"{n:02}")
-[
+months= [
     "January",
     "February",
     "March",
@@ -16,4 +16,4 @@ print(f"{n:02}")
 
 try:
     month, day, year = input().split(" ", "/")
-    if month = 
+    if month in months or month.digit()

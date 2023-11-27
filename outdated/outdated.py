@@ -17,7 +17,7 @@ months= [
 try:
     month, day, year = input().split(" ", "/")
     if month in months
-        months = enumerate(months)
+        months = months.
         month = months
     if 1 <= month.int() <= 12
 

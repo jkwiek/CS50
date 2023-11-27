@@ -16,4 +16,5 @@ months= [
 
 try:
     month, day, year = input().split(" ", "/")
-    if month in months or month.digit()
+    if month in months or 1 <= range(month.int()) <= 12
+    

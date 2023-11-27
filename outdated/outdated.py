@@ -20,4 +20,5 @@ try:
 
     if 1<= int(day) <= 31
 
-    if length(year.int())=4
+    if length(year.int())==4
+print(f"{month: 02}, f")

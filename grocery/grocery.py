@@ -2,7 +2,7 @@
 groceries={}
 while True:
     try:
-        item = input()
+        item = input().upper()
     except EOFError:
         break
     else:
@@ -12,7 +12,6 @@ while True:
             groceries[item]=1
 groceriesList = sorted(groceries)
 for item in groceriesList:
-    item_upper = item.upper()
-    print(groceries[item], item_upper)
+    print(groceries[item], item)
 
 #capitalize, number, alphabetize, print

@@ -20,4 +20,4 @@ try:
 
     if 1<= int(day) <= 31
 
-    if year.int()
+    if length(year.int())

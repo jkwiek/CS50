@@ -23,10 +23,20 @@ try:
             month = f"{month: 02f}
         else:
             month = month
-
-except ValueError:
-
     if 1<= int(day) <= 31
+        if length(month)  == 1:
+            month = f"{month: 02f}
+        else:
+            month = month
+
+
+    else:
+        continue
+except ValueError:
+    countinue
+
+else:
+
 
     if length(year.int())==4
 

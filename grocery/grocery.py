@@ -10,10 +10,9 @@ while True:
             groceries[item]+=1
         else:
             groceries[item]=1
-groceries = sorted(groceries)
-for item in groceries:
-    print(groceries[item])
-    item = item.upper()
-    print(item)
+groceriesList = sorted(groceries)
+for item in groceriesList:
+    item_upper = item.upper()
+    print(groceries[item], item_upper)
 
 #capitalize, number, alphabetize, print

@@ -24,10 +24,10 @@ try:
         else:
             month = month
     if 1<= int(day) <= 31
-        if length(month)  == 1:
-            month = f"{month: 02f}
+        if length(day)  == 1:
+            day= f"{day: 02f}
         else:
-            month = month
+            day = day
 
 
     else:

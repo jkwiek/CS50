@@ -11,7 +11,7 @@ while True:
         else:
             groceries[item]=1
 
-groceries= groceries.key_value.iterkeys()
+groceries= groceries.itemvalue.iterkeys()
 print(groceries)
 
 #capitalize, number, alphabetize, print

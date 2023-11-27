@@ -17,8 +17,8 @@ months= [
 try:
     month, day, year = input().split(" ", "/")
     if month in months
-        months = months.
-        month = months
+        month = months.index(month)
+        
     if 1 <= month.int() <= 12
 
     if 1<= int(day) <= 31

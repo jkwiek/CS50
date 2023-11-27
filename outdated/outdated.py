@@ -19,7 +19,7 @@ while True:
             month = int(months.index(month)) + 1
         if 1 <= month.int() <= 12:
             if len(month)  == 1:
-                month = f{month: 02f}
+                month = month1
             else:
                 month = month
         if 1<= int(day) <= 31:

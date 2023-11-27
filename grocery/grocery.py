@@ -10,7 +10,7 @@ while True:
             groceries[item]+=1
         else:
             groceries[item]=1
-groceries = sorted(groceries)
-print(groceries)
+groceries = sorted(groceries).capitalize()
+print(groceries,[groceries] sep=" ")
 
 #capitalize, number, alphabetize, print

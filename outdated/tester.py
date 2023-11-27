@@ -14,5 +14,5 @@ months = [
 ]
 month = input()
 if month in months:
-    month = months.index(month)
+    month = int(months.index(month)) + 1
     print(month)

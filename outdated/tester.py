@@ -12,5 +12,7 @@ months = [
     "November",
     "December"
 ]
-months = months.index(months)
-print(months)
+month = input()
+if month in months:
+    month = months.index(month)
+    print(month)

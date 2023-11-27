@@ -13,3 +13,7 @@ print(f"{n:02}")
     "November",
     "December"
 ]
+
+try:
+    month, day, year = input().split(" ", "/")
+    if month = 

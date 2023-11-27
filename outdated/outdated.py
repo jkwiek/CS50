@@ -28,7 +28,8 @@ try:
             day= f"{day: 02f}
         else:
             day = day
-
+    if length(year.int())==4
+        
 
     else:
         continue
@@ -38,7 +39,7 @@ except ValueError:
 else:
 
 
-    if length(year.int())==4
+
 
     if month
 print(year, month, day, sep="-")

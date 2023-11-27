@@ -19,7 +19,11 @@ try:
     if month in months:
         month = int(months.index(month)) + 1
     if 1 <= month.int() <= 12
-        month = month 
+        if length(month)  == 1:
+            month = f"{month: 02f}
+        else:
+            month = month
+
 except ValueError:
 
     if 1<= int(day) <= 31

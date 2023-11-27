@@ -10,7 +10,8 @@ while True:
             groceries[item]+=1
         else:
             groceries[item]=1
-
+for item in groceries:
+    sorted()
 groceries= groceries.itemvalue.iterkeys()
 print(groceries)
 

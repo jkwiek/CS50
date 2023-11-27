@@ -12,7 +12,8 @@ while True:
             groceries[item]=1
 groceries = sorted(groceries)
 for item in groceries:
+    print(groceries[item])
     item = item.upper()
-    print(groceries[item], item)
+    print(item)
 
 #capitalize, number, alphabetize, print

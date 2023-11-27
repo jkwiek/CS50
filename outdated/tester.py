@@ -12,5 +12,5 @@ months = [
     "November",
     "December"
 ]
-months = enumerate(months)
+months = months.index(months)
 print(months)

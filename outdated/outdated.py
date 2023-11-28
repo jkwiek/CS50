@@ -14,8 +14,8 @@ months= [
 ]
 def monthvalid(month):
     if month in months:
-        month = int(months.index(month)) + 1
-        month = str(month).zfill(2)
+        numMonth = int(months.index(month)) + 1
+        month = str(numMonth).zfill(2)
         return month
     elif 1 <= int(month) <= 12:
         month = month.zfill(2)

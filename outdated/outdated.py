@@ -18,10 +18,9 @@ def main():
         try:
             date = input("Date: ").strip()
             if "/" in date:
-                month, day, year = date.split("/")
-                month = monthValid
+                alphamonth, day, year = date.split("/")
             elif "," in date:
-                month, day, year = date.replace(",","").split(" ")
+                nummonth, day, year = date.replace(",","").split(" ")
 
 
             if None in (monthvalid(month), dayvalid(day), yearvalid(year)):
@@ -32,13 +31,16 @@ def main():
             print(yearvalid(year), monthvalid(month), dayvalid(day), sep="-")
             break
 
-def monthvalid(month):
-    if month in months:
+def monthvalid(alphamonth):
+    if alphamonth in months:
         month = int(months.index(month)) + 1
-        month = str(month).zfill(2)
+        month = str(alphamonth).zfill(2)
         return month
-    elif 1 <= int(month) <= 12:
-        month = month.zfill(2)
+    else:
+        return None
+def monthvalid(nummonth):
+    if 1 <= int(nummonth) <= 12:
+        month = nummonth.zfill(2)
         return month
     else:
         return None

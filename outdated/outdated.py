@@ -17,7 +17,7 @@ while True:
         month, day, year = input().strip(",").split(" ", "/")
         if month in months:
             month = int(months.index(month)) + 1
-        if 1 <= month.int() <= 12:
+        elif 1 <= month.int() <= 12:
             if len(month)  == 1:
                 month = 0 + month
 

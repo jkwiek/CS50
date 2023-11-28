@@ -18,12 +18,10 @@ while True:
         if month in months:
             month = int(months.index(month)) + 1
         elif 1 <= int(month) <= 12:
-            month.zfill(2)
+            month = month.zfill(2)
         if 1<= int(day) <= 31:
-            month.zfill(2)
+            day = day.zfill(2)
         if len(year)!= 4:
-            continue
-        else:
             continue
     except ValueError:
         continue

@@ -19,7 +19,7 @@ def main():
             date = input("Date: ").strip()
             if "/" in date:
                 month, day, year = date.split("/")
-                
+                month = monthValid
             elif "," in date:
                 month, day, year = date.replace(",","").split(" ")
 

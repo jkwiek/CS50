@@ -12,6 +12,21 @@ months= [
     "November",
     "December"
 ]
+
+def main():
+    while True:
+        try:
+            month, day, year = input("Date: ").replace(",","").replace("-"," ").split(" ")
+            month= monthvalid(month)
+            day= dayvalid(day)
+            year= yearvalid(year)
+            if not (monthvalid(month) and dayvalid(day) and yearvalid(year)):
+                continue
+        except ValueError:
+            continue
+        else:
+            print(year, month, day, sep="-")
+        
 def monthvalid(month):
     if month in months:
         month = int(months.index(month)) + 1
@@ -34,15 +49,4 @@ def yearvalid(year):
     else:
         return False
 
-while True:
-    try:
-        month, day, year = input("Date: ").replace(",","").replace("-"," ").split(" ")
-        month= monthvalid(month)
-        day= monthvalid(day)
-        year= monthvalid(year)
-        if not (monthvalid(month) and dayvalid(day) and yearvalid(year)):
-            continue
-    except ValueError:
-        continue
-    else:
-        print(year, month, day, sep="-")
+main()

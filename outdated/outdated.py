@@ -23,6 +23,7 @@ def main():
             continue
         else:
             print(yearvalid(year), monthvalid(month), dayvalid(day), sep="-")
+            break
 
 def monthvalid(month):
     if month in months:

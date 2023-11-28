@@ -27,7 +27,7 @@ def yearvalid(year):
 while True:
     try:
         month, day, year = input("Date: ").replace(",","").replace("-"," ").split(" ")
-        if not monthvalid() or not dayvalid() or not yearvalid():
+        if not monthvalid(month) or not dayvalid(day) or not yearvalid(year):
             continue
     except ValueError:
         continue

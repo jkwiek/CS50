@@ -18,11 +18,11 @@ def main():
         try:
             date = input("Date: ").strip()
             if "/" in date:
-                month, day, year = date.split(" ")
+                month, day, year = date.split("/")
+                
             elif "," in date:
                 month, day, year = date.replace(",","").split(" ")
 
-            month, day, year = input("Date: ").strip().replace(",","").replace("/"," ").split(" ")
 
             if None in (monthvalid(month), dayvalid(day), yearvalid(year)):
                 continue

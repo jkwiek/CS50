@@ -26,7 +26,8 @@ def main():
             continue
         else:
             print(year, month, day, sep="-")
-        
+            break
+
 def monthvalid(month):
     if month in months:
         month = int(months.index(month)) + 1

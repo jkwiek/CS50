@@ -15,7 +15,7 @@ months= [
 while True:
     try:
         month, day, year = input("Date: ").replace(",","").replace("-"," ").split(" ")
-        if month in months:
+        monthvalid
             alphaMonth = int(months.index(month)) + 1
             month = str(alphaMonth).zfill(2)
         elif 1 <= int(month) <= 12:

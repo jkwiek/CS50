@@ -17,6 +17,7 @@ def main():
     while True:
         try:
             month, day, year = input("Date: ").strip().replace(",","").replace("/"," ").split(" ")
+            
             if None in (monthvalid(month), dayvalid(day), yearvalid(year)):
                 continue
         except ValueError:

@@ -17,7 +17,7 @@ def main():
     while True:
         try:
             month, day, year = input("Date: ").replace(",","").replace("-"," ").split(" ")
-            if None == (monthvalid(month) or dayvalid(day) or yearvalid(year)):
+            if None in (monthvalid(month), dayvalid(day), yearvalid(year)):
                 continue
         except ValueError:
             continue

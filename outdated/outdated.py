@@ -14,7 +14,7 @@ months= [
 ]
 while True:
     try:
-        month, day, year = input().split(" ", "/")
+        month, day, year = input().split(" ", "/", ",")
         if month in months:
             month = int(months.index(month)) + 1
         if 1 <= month.int() <= 12:

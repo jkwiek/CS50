@@ -15,4 +15,5 @@ months = [
 month = input()
 if month in months:
     month = int(months.index(month)) + 1
+    month = str(month).zfill(2)
     print(month)

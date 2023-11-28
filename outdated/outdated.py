@@ -17,14 +17,13 @@ while True:
         month, day, year = input().strip(",").replace("-"," ").split(" ")
         if month in months:
             month = int(months.index(month)) + 1
-        elif 1 <= month.int() <= 12:
+        elif 1 <= int(month) <= 12:
             if len(month)  == 1:
                 month = 0 + month
         if 1<= int(day) <= 31:
             if len(day)  == 1:
                 day = 0 + day
-        if len(year)==4:
-            year = year
+        len(year)==4
         else:
             continue
     except ValueError:

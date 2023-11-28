@@ -23,7 +23,8 @@ while True:
         if 1<= int(day) <= 31:
             if len(day)  == 1:
                 day = "0" + day
-        len(year)==4
+        if len(year)!= 4
+            continue
         else:
             continue
     except ValueError:

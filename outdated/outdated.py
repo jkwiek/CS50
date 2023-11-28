@@ -16,14 +16,15 @@ def monthvalid(month):
     if month in months:
         month = int(months.index(month)) + 1
         month = str(month).zfill(2)
-        return True
     elif 1 <= int(month) <= 12:
         month = month.zfill(2)
-        return True
+    else:
+        return False
 def dayvalid(day):
     if 1<= int(day) <= 31:
         day = day.zfill(2)
-        return True
+    else:
+        return False
 def yearvalid(year):
     len(year)==4
     return True

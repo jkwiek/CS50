@@ -28,3 +28,5 @@ while True:
         continue
     else:
         print(year, month, day, sep="-")
+def monthvalid:
+

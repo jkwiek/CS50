@@ -19,10 +19,10 @@ while True:
             month = int(months.index(month)) + 1
         elif 1 <= int(month) <= 12:
             if len(month)  == 1:
-                month = 0 + month
+                month = "0" + month
         if 1<= int(day) <= 31:
             if len(day)  == 1:
-                day = 0 + day
+                day = "0" + day
         len(year)==4
         else:
             continue

@@ -23,8 +23,7 @@ while True:
         if 1<= int(day) <= 31:
             if len(day)  == 1:
                 day = 0 + day
-
-        if len(year.int())==4:
+        if len(year)==4:
             year = year
         else:
             continue

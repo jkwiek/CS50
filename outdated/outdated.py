@@ -23,7 +23,7 @@ def main():
                 nummonth, day, year = date.replace(",","").split(" ")
 
 
-            if None in (monthvalid(month), dayvalid(day), yearvalid(year)):
+            if None in (monthvalid(alphamonth), dayvalid(day), yearvalid(year)):
                 continue
         except ValueError:
             continue
@@ -33,7 +33,7 @@ def main():
 
 def monthvalid(alphamonth):
     if alphamonth in months:
-        month = int(months.index(month)) + 1
+        month = int(months.index(alphamonth)) + 1
         month = str(alphamonth).zfill(2)
         return month
     else:

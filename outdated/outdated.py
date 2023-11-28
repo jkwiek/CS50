@@ -12,10 +12,21 @@ months= [
     "November",
     "December"
 ]
+def monthvalid():
+    if month in months:
+        month = int(months.index(month)) + 1
+        month = str(month).zfill(2)
+        return True
+    elif 1 <= int(month) <= 12:
+        month = month.zfill(2)
+        return True 
+    else:
+        return False
+
 while True:
     try:
         month, day, year = input("Date: ").replace(",","").replace("-"," ").split(" ")
-        monthvalid
+        if not monthvalid() or not dayvalid() or not yearvalid()
             alphaMonth = int(months.index(month)) + 1
             month = str(alphaMonth).zfill(2)
         elif 1 <= int(month) <= 12:
@@ -28,5 +39,3 @@ while True:
         continue
     else:
         print(year, month, day, sep="-")
-def monthvalid:
-

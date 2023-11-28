@@ -16,9 +16,9 @@ while True:
     try:
         month, day, year = input().strip(",").replace("-"," ").split(" ")
         if month in months:
-            month = int(months.index(month)) + 1
+            alphaMonth = int(months.index(month)) + 1
         elif 1 <= int(month) <= 12:
-            month = month.zfill(2)
+            numMonth = month.zfill(2)
         if 1<= int(day) <= 31:
             day = day.zfill(2)
         if len(year)!= 4:

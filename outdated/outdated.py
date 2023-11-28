@@ -32,6 +32,6 @@ while True:
         else:
             continue
     except ValueError:
-        countinue
+        continue
     else:
         print(year, month, day, sep="-")

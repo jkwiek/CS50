@@ -19,38 +19,38 @@ def main():
             date = input("Date: ").strip()
             if "/" in date:
                 nummonth, day, year = date.split("/")
-                month = convert(nummonth)
+                month = convert_nummonth(nummonth)
             elif "," in date:
                 alphamonth, day, year = date.replace(",","").split(" ")
-                month = convert(alphamonth)
-            if None in (month, convert(day), convert(year)):
+                month = convert_alphamonth(alphamonth)
+            if None in (month, convert_day(day), convert_year(year)):
                 continue
         except ValueError:
             continue
         else:
-            print(convert(year), month, convert(day), sep="-")
+            print(convert_year(year), month, convert_day(day), sep="-")
             break
 
-def convert(alphamonth):
+def convert_alphamonth(alphamonth):
     if alphamonth in months:
         alphamonth = int(months.index(alphamonth)) + 1
         alphamonth = str(alphamonth).zfill(2)
         return alphamonth
     else:
         return None
-def convert(nummonth):
+def convert_nummonth(nummonth):
     if 1 <= int(nummonth) <= 12:
         nummonth = nummonth.zfill(2)
         return nummonth
     else:
         return None
-def convert(day):
+def convert_day(day):
     if 1<= int(day) <= 31:
         day = day.zfill(2)
         return day
     else:
         return None
-def convert(year):
+def convert_year(year):
     if len(year)==4:
         return year
     else:

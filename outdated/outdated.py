@@ -27,7 +27,7 @@ def main():
                 month = convert_alphamonth(alphamonth)
                 if None in (convert_alphamonth(alphamonth), convert_day(day), convert_year(year)):
                     continue
-        except ValueError:
+        except (ValueError, UnboundLocalError):
             continue
         else:
             print(convert_year(year), month, convert_day(day), sep="-")

@@ -20,11 +20,13 @@ def main():
             if "/" in date:
                 nummonth, day, year = date.split("/")
                 month = convert_nummonth(nummonth)
+                if None in (convert_nummonth(nummonth), convert_day(day), convert_year(year)):
+                    continue
             elif "," in date:
                 alphamonth, day, year = date.replace(",","").split(" ")
                 month = convert_alphamonth(alphamonth)
-            if None in (month, convert_day(day), convert_year(year)):
-                continue
+                if None in (convert_alphamonth(alphamonth), convert_day(day), convert_year(year)):
+                    continue
         except ValueError:
             continue
         else:

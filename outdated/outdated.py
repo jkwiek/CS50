@@ -18,15 +18,17 @@ def main():
         try:
             date = input("Date: ").strip()
             if "/" in date:
-                alphamonth, day, year = date.split("/")
+                nummonth, day, year = date.split("/")
+                month = convert(nummonth)
             elif "," in date:
-                nummonth, day, year = date.replace(",","").split(" ")
+                alphamonth, day, year = date.replace(",","").split(" ")
+                month = convert(alphamonth)
             if None in (convert(month), convert(day), convert(year)):
                 continue
         except ValueError:
             continue
         else:
-            print(convert(year), convert(month), convert(day), sep="-")
+            print(convert(year), month, convert(day), sep="-")
             break
 
 def convert(alphamonth):

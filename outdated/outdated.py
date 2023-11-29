@@ -21,8 +21,6 @@ def main():
                 alphamonth, day, year = date.split("/")
             elif "," in date:
                 nummonth, day, year = date.replace(",","").split(" ")
-
-
             if None in (monthvalid(month), dayvalid(day), yearvalid(year)):
                 continue
         except ValueError:

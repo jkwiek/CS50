@@ -23,7 +23,7 @@ def main():
             elif "," in date:
                 alphamonth, day, year = date.replace(",","").split(" ")
                 month = convert(alphamonth)
-            if None in (convert(month), convert(day), convert(year)):
+            if None in (month, convert(day), convert(year)):
                 continue
         except ValueError:
             continue

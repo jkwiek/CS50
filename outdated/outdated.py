@@ -33,15 +33,15 @@ def main():
 
 def convert(alphamonth):
     if alphamonth in months:
-        month = int(months.index(alphamonth)) + 1
-        month = str(alphamonth).zfill(2)
-        return month
+        alphamonth = int(months.index(alphamonth)) + 1
+        alphamonth = str(alphamonth).zfill(2)
+        return alphamonth
     else:
         return None
 def convert(nummonth):
     if 1 <= int(nummonth) <= 12:
-        month = nummonth.zfill(2)
-        return month
+        nummonth = nummonth.zfill(2)
+        return nummonth
     else:
         return None
 def convert(day):

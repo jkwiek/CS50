@@ -1,4 +1,3 @@
-#groceries[key]=value
 groceries={}
 while True:
     try:
@@ -14,4 +13,3 @@ groceriesList = sorted(groceries)
 for item in groceriesList:
     print(groceries[item], item)
 
-#capitalize, number, alphabetize, print

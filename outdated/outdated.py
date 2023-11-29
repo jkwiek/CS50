@@ -17,17 +17,19 @@ def main():
     while True:
         try:
             date = input("Date: ").strip()
+            month = None
+            day = None
+            year = None
             if "/" in date:
                 nummonth, day, year = date.split("/")
                 month = convert_nummonth(nummonth)
-                if None in (convert_nummonth(nummonth), convert_day(day), convert_year(year)):
-                    continue
             elif "," in date:
                 alphamonth, day, year = date.replace(",","").split(" ")
                 month = convert_alphamonth(alphamonth)
-                if None in (convert_alphamonth(alphamonth), convert_day(day), convert_year(year)):
+            if None in (month, convert_day(day), convert_year(year)):
                     continue
-        except (ValueError, UnboundLocalError):
+
+        except (ValueError):
             continue
         else:
             print(convert_year(year), month, convert_day(day), sep="-")

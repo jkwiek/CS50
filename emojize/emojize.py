@@ -1,1 +1,1 @@
-import 
+pip install emoji

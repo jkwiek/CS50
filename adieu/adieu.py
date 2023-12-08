@@ -1,4 +1,5 @@
-import groceries
+import getinputs() from grocery
+
 
 
 

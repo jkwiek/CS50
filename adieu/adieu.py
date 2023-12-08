@@ -1,5 +1,5 @@
-import grocery.py
-    
+from grocery import getinputs
+
 
 
 

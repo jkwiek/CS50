@@ -1,4 +1,7 @@
 groceries={}
+def main():
+    getinputs()
+    sortprint(groceries)
 def getinputs():
     while True:
         try:
@@ -10,8 +13,14 @@ def getinputs():
                 groceries[item]+=1
             else:
                 groceries[item]=1
+
 def sortprint(groceries):
     groceriesList = sorted(groceries)
     for item in groceriesList:
         print(groceries[item], item)
+
+main()
+
+
+
 

@@ -1,7 +1,12 @@
 import sys
 pip install inflect
-from Week3.grocery.grocery import getinputs
-getinputs()
+
+while True:
+        try:
+            item = input().upper()
+        except EOFError:
+            break
+        else:
 
 
 if len(sys.argv) == 2:

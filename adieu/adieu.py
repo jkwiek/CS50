@@ -1,4 +1,4 @@
-from grocery import getinputs
+from grocery.grocery impor getinputs
 
 
 

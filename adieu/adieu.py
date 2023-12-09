@@ -7,7 +7,7 @@ while True:
             break
         else:
             Names =+ Name
-print(Adieu to Names)
+print("Adieu, adieu, to", p.join(Names))
 
 
 

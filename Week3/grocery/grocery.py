@@ -2,7 +2,7 @@ groceries={}
 def main():
     getinputs()
     sortprint(groceries)
-    
+
 def getinputs():
     while True:
         try:

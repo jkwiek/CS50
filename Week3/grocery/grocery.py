@@ -7,7 +7,7 @@ def getinputs(x):
     while True:
         try:
             x==""
-            tem = input(x, ":").upper()
+            item = input(x, ":").upper()
         except EOFError:
             break
         else:

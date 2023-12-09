@@ -6,7 +6,8 @@ while True:
             continue
         except EOFError:
             break
-inflect 
+inflect
+
 
 
 

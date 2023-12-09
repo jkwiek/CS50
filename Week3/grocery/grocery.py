@@ -1,13 +1,12 @@
 groceries={}
-x=""
 def main():
-    getinputs(x)
+    getinputs()
     sortprint(groceries)
 
-def getinputs(x):
+def getinputs():
     while True:
         try:
-            item = input(x, ":").upper()
+            item = input().upper()
         except EOFError:
             break
         else:

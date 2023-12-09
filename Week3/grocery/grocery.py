@@ -3,10 +3,11 @@ def main():
     getinputs()
     sortprint(groceries)
 
-def getinputs():
+def getinputs(x):
     while True:
         try:
-            item = input().upper()
+            x==""
+            tem = input(x, ":").upper()
         except EOFError:
             break
         else:

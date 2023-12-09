@@ -6,7 +6,7 @@ while True:
             continue
         except EOFError:
             break
-inflect
+pjoin()
 
 
 

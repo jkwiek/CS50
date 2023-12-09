@@ -6,7 +6,9 @@ while True:
             continue
         except EOFError:
             break
-pjoin()
+        else:
+            list =+ Name
+pjoin((Name))
 
 
 

@@ -1,15 +1,12 @@
-import sys
 pip install inflect
 
 while True:
         try:
-            item = input().upper()
+            Name = input("Name: ")
+            continue
         except EOFError:
             break
-        else:
-
-
-if len(sys.argv) == 2:
+inflect 
 
 
 

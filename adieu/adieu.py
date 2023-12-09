@@ -1,5 +1,5 @@
 pip install inflect
-
+Names=[]
 while True:
         try:
             Name = input("Name: ")
@@ -7,7 +7,7 @@ while True:
         except EOFError:
             break
         else:
-            list =+ Name
+            Names =+ Name
 pjoin((Name))
 
 

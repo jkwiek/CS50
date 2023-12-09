@@ -1,4 +1,3 @@
-pip install inflect
 Names=[]
 while True:
         try:
@@ -8,7 +7,7 @@ while True:
             break
         else:
             Names =+ Name
-pjoin((Name))
+print(Adieu to Names)
 
 
 

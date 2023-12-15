@@ -5,7 +5,7 @@ while True:
         except EOFError:
             break
         else:
-            Names = Name.append()
+            Names = Names.append(Name)
 print("Adieu, adieu, to", Names)
 
 

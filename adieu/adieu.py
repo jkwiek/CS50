@@ -1,7 +1,7 @@
 Names=[]
 while True:
         try:
-            Name = input("Name: ")
+            Name = input("Name: ")   
         except EOFError:
             break
         else:

@@ -4,11 +4,9 @@ Names=[]
 
 while True:
     try:
-        Name = input("Name: ")
+        Names.append(Name)
     except EOFError:
         break
-    else:
-        Names.append(Name)
 
 Names = p.join(Names)
 print("Adieu, adieu, to", Names)

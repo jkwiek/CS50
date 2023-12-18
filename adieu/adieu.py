@@ -6,8 +6,8 @@ while True:
         except EOFError:
             break
         else:
-            Names= p/join(Name)
-print("Adieu, adieu, to", NamesList)
+            Names= p.join(Name)
+print("Adieu, adieu, to", Names)
 
 
 

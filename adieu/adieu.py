@@ -8,7 +8,7 @@ while True:
             break
         else:
             Names.append(Name)
-Names= p.join(Name)
+Names= p.join((Name))
 print("Adieu, adieu, to", Names)
 
 

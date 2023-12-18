@@ -1,12 +1,13 @@
 Names=[]
 while True:
         try:
-            Names = input("Name: ")
+            Name = input("Name: ")
+            Names = append(Name)
         except EOFError:
             break
         else:
             NamesList = p.join(Name)
-print("Adieu, adieu, to", Names)
+print("Adieu, adieu, to", NamesList)
 
 
 

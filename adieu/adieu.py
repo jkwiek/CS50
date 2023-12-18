@@ -7,6 +7,7 @@ while True:
         Name = input("Name: ")
         Names.append(Name)
     except EOFError:
+        print()
         break
 
 Names = p.join(Names)

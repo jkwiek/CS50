@@ -7,8 +7,8 @@ while True:
         except EOFError:
             break
         else:
-            Names.append(Name)
-Names= p.join((Name))
+            Names = Names.append(Name)
+Names = p.join(Names)
 print("Adieu, adieu, to", Names)
 
 

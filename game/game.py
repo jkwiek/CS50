@@ -1,5 +1,12 @@
 import random
-n = int(input("Level: "))
+while True:
+    try:
+        n = int(input("Level: "))
+    except ValueError:
+        continue
+    else:
+        break
+    
 goal = random.randint(1,n)
 while True:
     try:

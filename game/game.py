@@ -4,13 +4,15 @@ goal = random.randint(1,n)
 while True:
     try:
         guess = int(input("Guess: "))
-        if guess < goal:
+        if not 1<=guess<=n:
+            continue
+        elif guess < goal:
             print("Too small!")
         elif guess > goal:
             print("Too large!")
         else:
             break
-    except ValueError or 1<=guess<=n:
+    except ValueError:
         continue
 
 print("Just right!")

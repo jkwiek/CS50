@@ -2,11 +2,13 @@ import random
 while True:
     try:
         n = int(input("Level: "))
+        if n <=0:
+            continue
     except ValueError:
         continue
     else:
         break
-    
+
 goal = random.randint(1,n)
 while True:
     try:

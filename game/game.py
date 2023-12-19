@@ -1,3 +1,4 @@
 import random
 n = input("Level: ")
-random.
+goal = random.randrange(1,n,1)
+print(goal)

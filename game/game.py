@@ -5,7 +5,7 @@ while True:
     guess = int(input("Guess: "))
     if guess < goal:
         print("Too small!")
-    if guess > goal:
+    elif guess > goal:
         print("Too large!")
     else:
         break

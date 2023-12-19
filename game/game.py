@@ -2,8 +2,8 @@ import random
 while True:
     try:
         level = int(input("Level: "))
-            if level <=0:
-                continue
+        if level <=0:
+            continue
         goal = random.randint(1,level)
         guess = int(input("Guess: "))
         if not 1<=guess<=level:

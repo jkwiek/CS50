@@ -10,8 +10,8 @@ while True:
             print("Too large!")
         else:
             break
-    except ValueError:
-            continue
-    
+    except ValueError or 1<=guess<=n:
+        continue
+
 print("Just right!")
 

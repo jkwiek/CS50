@@ -1,17 +1,19 @@
 import random
 while True:
     try:
-        n = int(input("Level: "))
-        goal = random.randint(1,n)
+        level = int(input("Level: "))
+        goal = random.randint(1,level)
         guess = int(input("Guess: "))
-        if n <=0:
+        if level <=0:
             continue
-        if not 1<=guess<=n:
+        if not 1<=guess<=level:
             continue
         elif guess < goal:
             print("Too small!")
+            continue
         elif guess > goal:
             print("Too large!")
+            continue
         else:
             break
     except ValueError:

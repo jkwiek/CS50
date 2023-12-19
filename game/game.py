@@ -6,7 +6,6 @@ while True:
                 continue
         goal = random.randint(1,level)
         guess = int(input("Guess: "))
-        
         if not 1<=guess<=level:
             continue
         elif guess < goal:

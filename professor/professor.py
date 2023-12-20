@@ -8,7 +8,7 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if 
+            if level not in [1,2,3]
             break
         except ValueError:
             continue

@@ -16,7 +16,8 @@ def get_level():
             continue
 
 def generate_integer(level):
-    integer = random.(level)
+    for 
+    integer = random.getrandint(level)
     print(integer)
 
 

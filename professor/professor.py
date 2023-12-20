@@ -7,12 +7,15 @@ def main():
 def get_level():
     while True:
         try:
-            level = int("Level: ")
+            level = int(input("Level: "))
+            break
+        except ValueError:
+            continue
     return level
 
 
 def generate_integer(level):
-    ...
+    random.getint
 
 
 if __name__ == "__main__":

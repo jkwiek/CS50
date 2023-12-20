@@ -1,7 +1,7 @@
 import random
 
 def main():
-    get_level()
+    level = get_level()
     generate_integer(level)
 
 def get_level():
@@ -16,7 +16,7 @@ def get_level():
             continue
 
 def generate_integer(level):
-    integer = random.getrandbits(level)
+    integer = random.(level)
     print(integer)
 
 

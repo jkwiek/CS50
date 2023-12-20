@@ -18,6 +18,7 @@ def get_level():
 
 def generate_integer(level):
     random.getint
+    
 
 
 if __name__ == "__main__":

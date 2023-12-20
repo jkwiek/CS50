@@ -8,12 +8,13 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level not in [1,2,3]
-            break
+            if level not in [1,2,3]:
+                raise ValueError
+            else:
+                break
         except ValueError:
             continue
     return level
-
 
 def generate_integer(level):
     random.getint

@@ -1,8 +1,5 @@
 import random
 
-def main():
-    get_level()
-
 
 def get_level():
     while True:
@@ -17,8 +14,12 @@ def get_level():
     return level
 
 def generate_integer(level):
-    random.getint
-    
+    integer = random.getrandbits(level)
+    print(integer)
+
+def main():
+    get_level()
+    generate_integer(level)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,8 @@
 import random
 
+def main():
+    get_level()
+    generate_integer(level)
 
 def get_level():
     while True:
@@ -8,18 +11,14 @@ def get_level():
             if level not in [1,2,3]:
                 raise ValueError
             else:
-                break
+                return(level)
         except ValueError:
             continue
-    return level
 
 def generate_integer(level):
     integer = random.getrandbits(level)
     print(integer)
 
-def main():
-    get_level()
-    generate_integer(level)
 
 
 if __name__ == "__main__":

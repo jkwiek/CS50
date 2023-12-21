@@ -2,26 +2,20 @@ import random
 
 def main():
     level = get_level()
-    problems==0
-    while problems<10:
+    questions_asked==0
+    while questions_asked<10:
         problem = generate_problem(integer)
         answer = input(problem)
         solution = int(number1) + int(number2)
         if answer == solution:
-            problems=+1
+            questions_asked=+1
             continue
         else:
             tries==1
-
             while tries <= 3:
                 print("EEE")
                 tries+=1
                 print(solution)
-
-
-    #for problems <= 10:
-        #number= generate_integers(level)
-        #solution = number + generate_integers(level)
 
 
 def get_level():
@@ -45,10 +39,9 @@ def generate_integers(level):
     integer = "".join(integer)
     return integer
 
-def generate_problem(integer):
-        level = get_level()
+def generate_problem():
         number1 = generate_integers(level)
-        number2 = generate_integers(level)
+        number2 = generate_integers()
         problem = f"{number1} + {number2} = "
         return problem
 

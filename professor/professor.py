@@ -16,7 +16,7 @@ def main():
             tries==1
             for tries<=3:
                 print(EEE)
-                tries=+1
+                tries+=1
 
 
     #for problems <= 10:

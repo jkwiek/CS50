@@ -22,7 +22,7 @@ def get_level():
 
 def generate_integers(level):
     integer= []
-    n==0
+    n==.0
     while n<2:
         for _ in range(level):
             digit = str(random.randint(0,9))

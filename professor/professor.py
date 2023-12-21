@@ -3,18 +3,22 @@ import random
 def main():
     level = get_level()
     problems==0
-    for problems<10:
+    while problems<10:
         number1 = generate_integers(level)
         number2 = generate_integers(level)
         problem = f"{number1} + {number2} = "
         answer = input(problem)
         solution = int(number1) + int(number2)
         if answer == solution:
+            problems=+1
             continue
         else:
-            
+            tries==1
+            for tries<=3:
+                print(EEE)
+    
+                tries=+1
 
-            problems=+1
 
     #for problems <= 10:
         #number= generate_integers(level)

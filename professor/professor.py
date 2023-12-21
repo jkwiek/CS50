@@ -5,7 +5,7 @@ def main():
     number1 = generate_integers(level)
     number2 = generate_integers(level)
     answer = input(number1, "+", number2, "="
-    solution = 
+    solution = number1 + number2
     while answer != solution and
 
 

@@ -4,8 +4,7 @@ def main():
     level = get_level()
     number1 = generate_integers(level)
     number2 = generate_integers(level)
-    problem = number1 "+" number 2 "="
-    answer = input("(number1)s + (numer2))
+    answer = input("s(number1) + s(number2) =")
     solution = int(number1) + int(number2)
     print(solution)
 

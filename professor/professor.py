@@ -4,7 +4,7 @@ def main():
     level = get_level()
     problems==0
     while problems<10:
-        generate_problem(integers) 
+        problem = generate_problem(integers)
         answer = input(problem)
         solution = int(number1) + int(number2)
         if answer == solution:
@@ -50,8 +50,7 @@ def generate_problem(integers):
         number1 = generate_integers(level)
         number2 = generate_integers(level)
         problem = f"{number1} + {number2} = "
-        solution = int(number1) + int(number2)
-        return problem, solution
+        return problem
 
 if __name__ == "__main__":
     main()

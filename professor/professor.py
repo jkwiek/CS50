@@ -20,7 +20,7 @@ def generate_integer(level):
     for _ in range(level):
         integer = random.randint(0,9)
         number += [integer]
-    print(number)
+    print("".join(number))
 
 if __name__ == "__main__":
     main()

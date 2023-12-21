@@ -2,7 +2,10 @@ import random
 
 def main():
     level = get_level()
-    generate_integer(level)
+    for problems <= 10:
+        number= generate_integers(level)
+        solution = number + generate_integers(level)
+
 
 def get_level():
     while True:
@@ -15,12 +18,12 @@ def get_level():
         except ValueError:
             continue
 
-def generate_integer(level):
-    number= []
+def generate_integers(level):
+    integer= []
     for _ in range(level):
         digit = str(random.randint(0,9))
-        number += [digit]
-    number = "".join(number)
+        integer += [digit]
+    integer = "".join(integer)
 
 if __name__ == "__main__":
     main()

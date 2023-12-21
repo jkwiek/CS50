@@ -27,7 +27,7 @@ def generate_integers(level):
         for _ in range(level):
             digit = str(random.randint(0,9))
             integer += [digit]
-        n==+1
+        n=+1
     integer = "".join(integer)
 
 

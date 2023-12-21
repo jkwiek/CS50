@@ -9,7 +9,7 @@ def main():
         problem = f"{number1} + {number2} = "
         answer = input(problem)
         solution = int(number1) + int(number2)
-        if answer == solution
+        if answer == solution:
             continue
             problems=+1
 

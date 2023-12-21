@@ -4,9 +4,10 @@ def main():
     level = get_level()
     number1 = generate_integers(level)
     number2 = generate_integers(level)
-    answer = input(number1, "+", number2, "=")
-    if answer == solution:
-        
+    answer = input(number1, "+", number2, "="
+    solution = 
+    while answer != solution and
+
 
     #for problems <= 10:
         #number= generate_integers(level)

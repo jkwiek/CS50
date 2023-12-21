@@ -18,9 +18,9 @@ def get_level():
 def generate_integer(level):
     number= []
     for _ in range(level):
-        integer = random.randint(0,9)
-        number += [integer]
-    print("".join(number))
+        digit = str(random.randint(0,9))
+        number += [digit]
+    number = "".join(number)
 
 if __name__ == "__main__":
     main()

@@ -20,10 +20,12 @@ def get_level():
 
 def generate_integers(level):
     integer= []
+    n=0
     for n<=2
         for _ in range(level):
             digit = str(random.randint(0,9))
             integer += [digit]
+        n=+1
     integer = "".join(integer)
 
 

@@ -4,7 +4,7 @@ def main():
     level = get_level()
     problems==0
     while problems<10:
-        problem = generate_problem(integers)
+        problem = generate_problem(integer)
         answer = input(problem)
         solution = int(number1) + int(number2)
         if answer == solution:
@@ -45,7 +45,7 @@ def generate_integers(level):
     integer = "".join(integer)
     return integer
 
-def generate_problem(integers):
+def generate_problem(integer):
         level = get_level()
         number1 = generate_integers(level)
         number2 = generate_integers(level)

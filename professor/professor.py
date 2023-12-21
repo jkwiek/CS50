@@ -15,9 +15,9 @@ def main():
         else:
             tries==1
             for tries<=3:
-                print(EEE)
+                print("EEE")
                 tries+=1
-            
+
 
     #for problems <= 10:
         #number= generate_integers(level)

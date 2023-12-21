@@ -16,9 +16,12 @@ def get_level():
             continue
 
 def generate_integer(level):
-    for x in range(1,level+1):
+    integer = None
+    number= [integer]
+    for _ in range(1,level+1):
         integer = random.randint(0,9)
-        print(integer)
+        number += integer
+        print(number)
 
 if __name__ == "__main__":
     main()

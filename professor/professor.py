@@ -14,11 +14,11 @@ def main():
             continue
         else:
             tries==1
-            for tries <= 3:
-            print("EEE")
-            tries+=1
-            print(solution)
 
+            while tries <= 3:
+                print("EEE")
+                tries+=1
+                print(solution)
 
 
     #for problems <= 10:
@@ -46,6 +46,13 @@ def generate_integers(level):
         integer += [digit]
     integer = "".join(integer)
     return integer
+
+def generate_problem(integers):
+        number1 = generate_integers(level)
+        number2 = generate_integers(level)
+        problem = f"{number1} + {number2} = "
+        solution = int(number1) + int(number2)
+        return problem, solution
 
 if __name__ == "__main__":
     main()

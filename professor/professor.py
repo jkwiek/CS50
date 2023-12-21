@@ -14,9 +14,11 @@ def main():
             continue
         else:
             tries==1
-            for tries<=3:
-                print("EEE")
-                tries+=1
+            for tries <= 3:
+            print("EEE")
+            tries+=1
+            print(solution)
+
 
 
     #for problems <= 10:

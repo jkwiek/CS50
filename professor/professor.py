@@ -5,8 +5,13 @@ def main():
     questions_asked==0
     while questions_asked<10:
         question, solution = generate_problem().split("= ")
-        
         answer = input(question)
+        if answer != solution:
+            tries==1
+            while tries <= 3:
+                print("EEE")
+                continue
+                tries+=1
         if answer == solution:
             questions_asked=+1
             continue
@@ -17,7 +22,6 @@ def main():
                 print()
                 tries+=1
             print()
-
 
 
 def get_level():

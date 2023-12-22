@@ -3,16 +3,16 @@ import random
 def main():
     level = get_level()
     questions_asked==0
+    tries = 1
     while questions_asked<10:
         question, solution = generate_problem().split("= ")
-        answer = input(question)
-        if answer != solution:
-            tries==1
+        if input(question) != solution:
             while tries <= 3:
                 print("EEE")
                 continue
-                tries+=1
-        else
+                tries=+1
+            print(solution)
+        else:
             questions_asked=+1
             continue
             print()

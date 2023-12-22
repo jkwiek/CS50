@@ -12,15 +12,9 @@ def main():
                 print("EEE")
                 continue
                 tries+=1
-        if answer == solution:
+        else
             questions_asked=+1
             continue
-        else:
-            tries==1
-            while tries <= 3:
-                print("EEE")
-                print()
-                tries+=1
             print()
 
 

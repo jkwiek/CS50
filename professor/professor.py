@@ -6,7 +6,7 @@ def main():
     while questions_asked<10:
         problem = generate_problem()
         answer = input(problem)
-        solution = int(number1) + int(number2)
+
         if answer == solution:
             questions_asked=+1
             continue
@@ -43,6 +43,7 @@ def generate_integers(level):
 def generate_problem():
     number1 = generate_integers()
     number2 = generate_integers()
+    solution = int(number1) + int(number2)
     problem = f"{number1} + {number2} = {solution}"
     return problem
 

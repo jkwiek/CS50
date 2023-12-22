@@ -2,7 +2,7 @@ import random
 
 def main():
     level = get_level()
-    questions_asked==0
+    questions_asked=0
     tries = 1
     while questions_asked<10:
         question, solution = generate_problem().split("= ")
@@ -12,10 +12,10 @@ def main():
                 continue
                 tries=+1
             print(solution)
+            questions_asked=+1
         else:
             questions_asked=+1
             continue
-            print()
 
 
 def get_level():

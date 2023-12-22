@@ -4,8 +4,8 @@ def main():
     level = get_level()
     questions_asked==0
     while questions_asked<10:
-        problem, solution = generate_problem().split("= ")
-        answer = input(problem)
+        question, solution = generate_problem().split("= ")
+        answer = input(question)
         if answer == solution:
             questions_asked=+1
             continue

@@ -15,7 +15,8 @@ def main():
             while tries <= 3:
                 print("EEE")
                 tries+=1
-                print(solution)
+            print(solution)
+
 
 
 def get_level():
@@ -42,8 +43,8 @@ def generate_integers(level):
 def generate_problem():
     number1 = generate_integers()
     number2 = generate_integers()
-    problem = f"{number1} + {number2} = "
-    return problem, solution
+    problem = f"{number1} + {number2} = {solution}"
+    return problem
 
 
 

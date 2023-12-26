@@ -8,8 +8,8 @@ def main():
         problem = generate_problem(level)[0]
         solution = generate_problem(level)[1]
         while True:
-            input = input(problem)
-            if input == solution:
+            user_input = input(problem)
+            if user_input == solution:
                 questions_asked =+ 1
                 break
             else:

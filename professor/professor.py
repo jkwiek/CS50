@@ -49,14 +49,6 @@ def generate_integers(level):
         integer = random.randint(100,1000)
     return integer
 
-#integer= []
-#digit = str(random.randint(1,9))
-#integer += [digit]
-#for _ in range(level-1):
-#digit = str(random.randint(0,9))
-#integer += [digit]
-#integer = "".join(integer)
-#return integer
 def generate_problem(level):
     number1 = generate_integers(level)
     number2 = generate_integers(level)

@@ -2,12 +2,12 @@ import random
 
 def main():
     level = get_level()
-    questions_asked=0
-    tries = 1
+    questions_asked == 0
+    tries == 1
     while questions_asked<10:
         question, solution = generate_problem(level).split(" = ")
         if input(question) == solution:
-           questions_asked=+1
+           questions_asked =+ 1
         else:
             while tries <= 3:
                 print("EEE")

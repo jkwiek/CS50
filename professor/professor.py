@@ -18,8 +18,6 @@ def main():
             questions_asked=+1
 
 
-
-
 def get_level():
     while True:
         try:

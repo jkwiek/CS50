@@ -9,13 +9,15 @@ def main():
         solution = generate_problem(level)[1]
         if input(problem) == solution:
            questions_asked =+ 1
+           continue
         else:
             while tries <= 3:
                 print("EEE")
                 tries=+1
             print(solution)
             questions_asked=+1
-        
+            
+
 
 
 def get_level():

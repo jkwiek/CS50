@@ -42,8 +42,8 @@ def generate_problem(level):
     number1 = generate_integers(level)
     number2 = generate_integers(level)
     solution = int(number1) + int(number2)
-    problem = f"{number1} + {number2} = {solution}"
-    return problem
+    problem = f"{number1} + {number2}"
+    return problem and solution
 
 
 

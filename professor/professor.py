@@ -18,7 +18,7 @@ def main():
                     print("EEE")
                     tries += 1
                 else:
-                    print(problem, solution)
+                    print(problem, solution, sep="")
                     questions_asked += 1
                     break
 # so basically, if the answer is wrong, I want it to go to line 10 while tries <=3. but, if the answer is right, I want the code to repeat from the beginning of the loop (auto, dont need to code)

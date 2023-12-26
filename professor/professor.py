@@ -41,14 +41,22 @@ def get_level():
             continue
 
 def generate_integers(level):
-    integer= []
-    digit = str(random.randint(1,9))
-    integer += [digit]
-    for _ in range(level-1):
-        digit = str(random.randint(0,9))
-        integer += [digit]
-    integer = "".join(integer)
-    return integer
+    if level == 1:
+        random.randint(1,10)
+    elif level == 2:
+        random.randint(10,100)
+    elif level == 3:
+        random.randint(100,1000)
+
+#integer= []
+#digit = str(random.randint(1,9))
+#integer += [digit]
+#for _ in range(level-1):
+#digit = str(random.randint(0,9))
+#integer += [digit]
+#integer = "".join(integer)
+#return integer
+
 
 def generate_problem(level):
     number1 = generate_integers(level)

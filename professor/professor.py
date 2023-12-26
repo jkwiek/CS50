@@ -23,7 +23,7 @@ def main():
                         print(problem, solution, sep="")
                         questions_asked += 1
                         break
-            except ValueError:
+            except ValueError or else:
                 print("EEE")
                 tries += 1
                 continue

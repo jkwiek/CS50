@@ -14,7 +14,7 @@ def main():
                 if user_input == solution:
                     questions_asked += 1
                     break
-                except ValueError or else:
+            except ValueError or user_input != solution:
                     if tries < 3:
                         print("EEE")
                         tries += 1
@@ -23,7 +23,10 @@ def main():
                         print(problem, solution, sep="")
                         questions_asked += 1
                         break
-    
+    score
+    print(f"Score: {score}")
+
+
 # so basically, if the answer is wrong, I want it to go to line 10 while tries <=3. but, if the answer is right, I want the code to repeat from the beginning of the loop (auto, dont need to code)
 # loop types: for (not in this case) while!!!
 # problems left: 1) were getting the answer for each problem, not just the 3rd wrong attempt and 2) we are not getting EEEs for wrong answers at all

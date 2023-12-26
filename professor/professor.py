@@ -10,13 +10,14 @@ def main():
         while True:
             input = input(problem)
             if input == solution:
-            questions_asked =+ 1
+                questions_asked =+ 1
+                break
             else:
-            while tries <= 3:
-                print("EEE")
-
-            print(solution)
-            questions_asked=+1
+                while tries <= 3:
+                    print("EEE")
+                print(solution)
+                questions_asked=+1
+                
 # so basically, if the answer is wrong, I want it to go to line 10 while tries <=3. but, if the answer is right, I want the code to repeat from the beginning of the loop (auto, dont need to code)
 # loop types: for (not in this case) while!!!
 def get_level():

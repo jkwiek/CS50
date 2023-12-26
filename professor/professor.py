@@ -5,8 +5,9 @@ def main():
     questions_asked = 0
     tries = 1
     while questions_asked < 10:
-        problem = generate_problem(level)[0]
-        solution = generate_problem(level)[1]
+        question = generate_problem(level)
+        problem = question[0]
+        solution = question[1]
         while True:
             user_input = input(problem)
             if user_input == solution:

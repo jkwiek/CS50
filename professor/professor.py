@@ -16,7 +16,9 @@ def main():
                     questions_asked += 1
                     score += 1
                     break
-            except ValueError or user_input != solution:
+                else:
+                    raise ValueError
+            except ValueError:
                     print("EEE")
                     if tries < 3:
                         tries += 1

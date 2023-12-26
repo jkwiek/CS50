@@ -15,6 +15,7 @@ def main():
             else:
                 while tries <= 3:
                     print("EEE")
+                    tries=+1
                 print(solution)
                 questions_asked=+1
                 break

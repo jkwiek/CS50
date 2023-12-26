@@ -9,7 +9,7 @@ def main():
         problem = question[0]
         solution = question[1]
         while True:
-            user_input = input(problem)
+            user_input = int(input(problem))
             if user_input == solution:
                 questions_asked += 1
                 break

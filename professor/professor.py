@@ -4,6 +4,7 @@ def main():
     level = get_level()
     questions_asked = 0
     tries = 1
+    score = 0
     while questions_asked < 10:
         question = generate_problem(level)
         problem = question[0]
@@ -13,17 +14,17 @@ def main():
                 user_input = int(input(problem))
                 if user_input == solution:
                     questions_asked += 1
+                    score += 1
                     break
             except ValueError or user_input != solution:
+                    print("EEE")
                     if tries < 3:
-                        print("EEE")
                         tries += 1
                         continue
                     else:
                         print(problem, solution, sep="")
                         questions_asked += 1
                         break
-    score
     print(f"Score: {score}")
 
 

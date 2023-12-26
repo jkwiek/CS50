@@ -14,7 +14,7 @@ def main():
                 questions_asked += 1
                 break
             else:
-                if tries <= 3:
+                if tries < 3:
                     print("EEE")
                     tries += 1
                 else:

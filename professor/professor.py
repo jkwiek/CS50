@@ -16,7 +16,7 @@ def main():
                 tries=+1
             print(solution)
             questions_asked=+1
-            
+
 
 
 

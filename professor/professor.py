@@ -17,6 +17,7 @@ def main():
                 if tries < 3:
                     print("EEE")
                     tries += 1
+                    continue
                 else:
                     print(problem, solution, sep="")
                     questions_asked += 1

@@ -42,11 +42,11 @@ def get_level():
 
 def generate_integers(level):
     if level == 1:
-        integer = random.randint(0,10)
+        integer = random.randint(0,9)
     elif level == 2:
-        integer = random.randint(10,100)
+        integer = random.randint(10,99)
     elif level == 3:
-        integer = random.randint(100,1000)
+        integer = random.randint(100,999)
     return integer
 
 def generate_problem(level):

@@ -16,7 +16,7 @@ elif IndexError:
     sys.exit
 
 cost = n * conversion_factor
-print(f"[cost]":.4f)
+print(f"{cost:,.4f}")
 #except requests.RequestException:
 
 

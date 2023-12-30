@@ -7,13 +7,16 @@ response = response.json()
 conversion_factor = response["rate_float"]
 
 n = float(sys.argv[1])
-    except ValueError:
-        print("Command-line argument is not a number")
-        break
-    except IndexError:
-        print("Missing command-line argument")
-        break
-USD
+
+if ValueError:
+    print("Command-line argument is not a number")
+    sys.exit
+elif IndexError:
+    print("Missing command-line argument")
+    sys.exit
+
+cost = n * conversion_factor
+print(f"[cost]":.4f)
 #except requests.RequestException:
 
 

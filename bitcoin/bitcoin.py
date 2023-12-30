@@ -3,8 +3,9 @@ import json
 import requests
 
 response = requests.get(" https://api.coindesk.com/v1/bpi/currentprice.json")
-{response} = response.json()
-conversion_factor = response({"bpi"["rate_float"]})
+response = response.json()
+conversion_factor = response["bpi"]
+conversion_factor = bpi["rate_float"]
 
 
 n = float(sys.argv[1])

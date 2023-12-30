@@ -6,7 +6,9 @@ while True:
     except ValueError:
         print("Command-line argument is not a number")
         break
-
+    except IndexError:
+        print("Missing command-line argument")
+        break
 #except requests.RequestException:
 
 

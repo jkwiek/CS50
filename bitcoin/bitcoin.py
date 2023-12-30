@@ -6,7 +6,7 @@ response = requests.get(" https://api.coindesk.com/v1/bpi/currentprice.json")
 response = response.json()
 conversion_factor = response["bpi"]
 conversion_factor = conversion_factor["USD"]
-conversion_factor = conversion_factor 
+conversion_factor = conversion_factor["rate_float"]
 
 
 n = float(sys.argv[1])

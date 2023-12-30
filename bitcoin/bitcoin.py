@@ -1,10 +1,10 @@
 import sys
 import requests
-
-try:
-    input = sys.argv[1]
-
-except requests.RequestException:
+while True
+    try:
+        input = sys.argv[1]
+    except ValueError
+#except requests.RequestException:
 
 
 

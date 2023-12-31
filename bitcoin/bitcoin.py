@@ -13,7 +13,7 @@ if len(sys.argv) < 2:
     sys.exit
 try:
     n = float(sys.argv[1])
-except ValuError:
+except ValueError:
     print("Command-line argument is not a number")
     sys.exit
 else:

@@ -1,7 +1,7 @@
 import random
 
 def validate(input):
-
+    
 
 try:
     level = int(input("Level: "))

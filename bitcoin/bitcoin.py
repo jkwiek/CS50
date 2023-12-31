@@ -11,7 +11,7 @@ conversion_factor = conversion_factor["rate_float"]
 
 n = sys.argv[1]
 
-if not n.remove()".").isdigit():
+if not n.replace(".", "", 1).isdigit():
     print("Command-line argument is not a number")
     sys.exit
 elif len(sys.argv) != 2:

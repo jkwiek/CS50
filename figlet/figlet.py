@@ -10,8 +10,10 @@ fonts = figlet.getFonts()
 if len(sys.argv) == 1:
     f = random.choice(fonts)
 elif len(sys.argv) == 3:
-    if sys.argv[1] != "-f" or "--font" or sys.argv[2] not in fonts:
-        sys.exit
+    if sys.argv[1] != "-f" or "--font":
+        sys.exit(")
+    elif sys.argv[2] not in fonts:
+        sys.exit("Second command-line argument is not  invalid font")
     else:
         f = sys.argv[2]
 else:

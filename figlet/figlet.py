@@ -1,11 +1,14 @@
-import pyfiglet
+from pyfiglet import Figlet
 import sys
 import random
 
-fonts = [pyfiglet.figlet]
+figlet = Figlet()
+
+fonts = [figlet.getFonts]
 
 if len(sys.argv) == 1:
-    font = random.choice(fonts)
+    f = random.choice(fonts)
+    figlet.setFont(font = f)
     raw_text = input("Input: ")
     figlet_text = pyfiglet(raw_text)
 elif len(sys.argv) == 3:

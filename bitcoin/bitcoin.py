@@ -19,7 +19,7 @@ elif len(sys.argv) != 2:
     sys.exit
 else:
     cost = float(n) * conversion_factor
-    print(f"{cost:,.4f}")
+    print(f"${cost:,.4f}")
 
 #except requests.RequestException:
 

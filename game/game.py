@@ -5,7 +5,7 @@ def validate(input):
         input = int(input)
     except ValueError:
         return False
-
+while level = None:
     level = input("Level: ")
     validate(level)
     if level <=0:

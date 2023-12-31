@@ -10,6 +10,7 @@ conversion_factor = conversion_factor["rate_float"]
 
 
 n = float(sys.argv[1])
+print(n)
 
 if ValueError:
     print("Command-line argument is not a number")
@@ -17,9 +18,10 @@ if ValueError:
 elif IndexError:
     print("Missing command-line argument")
     sys.exit
+else:
+    cost = n * conversion_factor
+    print(f"{cost:,.4f}")
 
-cost = n * conversion_factor
-print(f"{cost:,.4f}")
 #except requests.RequestException:
 
 #BPI->USD->rate_float

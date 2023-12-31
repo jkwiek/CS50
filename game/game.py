@@ -1,5 +1,18 @@
 import random
 
+def main():
+    level = input("Level: ")
+    while valid_level(level) == False:
+        level = input("Level: ")
+
+    goal = random.randint(1,int(level))
+
+    guess = input("Guess: ")
+    while correct_guess(guess) == False:
+        guess = input("Guess: ")
+
+    print("Just right!")
+
 def valid_level(level):
     try:
         level = int(level)
@@ -12,11 +25,11 @@ def valid_level(level):
             return True
 def correct_guess(guess):
     try:
-        guess = int(guess)
+        guess_int = int(guess)
     except ValueError:
         return False
     else:
-        if not 1<=int(guess)<=int(level):
+        if not 1<=guess_int<=level:
             return False
         elif guess < goal:
             print("Too small!")
@@ -26,18 +39,6 @@ def correct_guess(guess):
             return False
         else:
             return True
-
-level = input("Level: ")
-while valid_level(level) == False:
-    level = input("Level: ")
-
-goal = random.randint(1,int(level))
-
-guess = input("Guess: ")
-while correct_guess(guess) == False:
-    guess = input("Guess: ")
-
-print("Just right!")
-
+main()
 
 

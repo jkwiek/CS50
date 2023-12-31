@@ -8,32 +8,30 @@ def valid_level(level):
     else:
         if level <= 0:
             return False
-def valid_goal(goal):
+def correct_guess(guess):
     try:
-        guess = int(level)
+        guess = int(guess)
     except ValueError:
         return False
-    
+    else:
+        if 1<=guess<=level:
+            return False
+        elif guess < goal:
+            print("Too small!")
+            return False
+        elif guess > goal:
+            print("Too large!")
+            return False
 
 level = input("Level: ")
-    while not valid_level(level):
-        level = input("Level: ")
+while not valid_level(level):
+    level = input("Level: ")
 
 goal = random.randint(1,level)
 
-while guess = None:
+guess = input("Guess: ")
+while not correct_guess(guess):
     guess = input("Guess: ")
-    validate(guess)
-    if 1<=guess<=level:
-        break
-        elif guess < goal:
-            print("Too small!")
-        elif guess > goal:
-            print("Too large!")
-        else:
-            break
-    except ValueError:
-        continue
 
 print("Just right!")
 

@@ -11,9 +11,9 @@ if len(sys.argv) == 1:
     f = random.choice(fonts)
 elif len(sys.argv) == 3:
     if sys.argv[1] != "-f" or "--font":
-        sys.exit(")
+        sys.exit("First command-line argument is not valid, use -f or --font only")
     elif sys.argv[2] not in fonts:
-        sys.exit("Second command-line argument is not  invalid font")
+        sys.exit("Second command-line argument is not a valid font")
     else:
         f = sys.argv[2]
 else:

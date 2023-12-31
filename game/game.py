@@ -1,13 +1,14 @@
 import random
 
 def validate(input):
-    
-
-try:
-    level = int(input("Level: "))
-    if level <=0:
-        continue
+    try:
+        input = int(input)
     except ValueError:
+        return False
+
+    level = input("Level: ")
+    validate(level)
+    if level <=0:
         continue
     else:
         goal = random.randint(1,level)

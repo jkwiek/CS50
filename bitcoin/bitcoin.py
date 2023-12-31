@@ -14,11 +14,11 @@ conversion_factor = conversion_factor["rate_float"]
 if len(sys.argv) != 2:
     print("Missing command-line argument")
     sys.exit
-n = sys.argv[1]
-elif not n.replace(".", "", 1).isdigit():
+elif not sys.argv[1].replace(".", "", 1).isdigit():
     print("Command-line argument is not a number")
     sys.exit
 else:
+    n = sys.argv[1]
     cost = float(n) * conversion_factor
     print(f"${cost:,.4f}")
 

@@ -39,5 +39,3 @@ def correct_guess(guess,goal,level):
         else:
             return True
 main()
-
-

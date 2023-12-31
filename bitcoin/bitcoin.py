@@ -1,11 +1,11 @@
-import sys 
+import sys
 import requests
 
 response = requests.get(" https://api.coindesk.com/v1/bpi/currentprice.json")
-response = response.json()
-conversion_factor = response["bpi"]
-conversion_factor = conversion_factor["USD"]
-conversion_factor = conversion_factor["rate_float"]
+conversion_factor = response.json()["bpi"]["USD"]["rate_float"]
+#conversion_factor = response["bpi"]
+#conversion_factor = conversion_factor["USD"]
+#conversion_factor = conversion_factor["rate_float"]
 
 
 

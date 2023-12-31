@@ -4,7 +4,7 @@ import random
 
 figlet = Figlet()
 
-fonts = [figlet.getFonts]
+fonts = [figlet.getFonts()]
 
 if len(sys.argv) == 1:
     f = random.choice(fonts)

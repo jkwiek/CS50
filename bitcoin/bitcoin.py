@@ -11,11 +11,11 @@ conversion_factor = conversion_factor["rate_float"]
 
 n = sys.argv[1]
 
-if not n.replace(".", "", 1).isdigit():
-    print("Command-line argument is not a number")
-    sys.exit
-elif len(sys.argv) != 2:
+if len(sys.argv) != 2:
     print("Missing command-line argument")
+    sys.exit
+elif not n.replace(".", "", 1).isdigit():
+    print("Command-line argument is not a number")
     sys.exit
 else:
     cost = float(n) * conversion_factor

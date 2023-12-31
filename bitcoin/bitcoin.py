@@ -8,12 +8,12 @@ conversion_factor = response.json()["bpi"]["USD"]["rate_float"]
 #conversion_factor = conversion_factor["rate_float"]
 
 
-
-
 if len(sys.argv) < 2:
     print("Missing command-line argument")
     sys.exit
-elif not sys.argv[1].replace(".", "", 1).isdigit():
+try:
+    n = float(sys.argv[1])
+except ValuError:
     print("Command-line argument is not a number")
     sys.exit
 else:

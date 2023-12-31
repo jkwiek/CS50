@@ -18,7 +18,7 @@ elif len(sys.argv) != 2:
     print("Missing command-line argument")
     sys.exit
 else:
-    cost = n * conversion_factor
+    cost = float(n) * conversion_factor
     print(f"{cost:,.4f}")
 
 #except requests.RequestException:

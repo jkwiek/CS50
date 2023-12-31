@@ -1,9 +1,14 @@
 import pyfiglet
 import sys
+import random
 
-if len(sys.argv) == 1
+fonts = []
 
-elif len(sys.argv) == 3
-
+if len(sys.argv) == 1:
+    print("random")
+    #font = random.
+elif len(sys.argv) == 3:
+    if sys.argv[1] != "-f" or "--font" or sys.argv[2] not in fonts:
+        sys.exit
 else:
     sys.exit

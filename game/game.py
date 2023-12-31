@@ -22,13 +22,13 @@ def valid_level(level):
             return False
         else:
             return True
-def correct_guess(guess,goal,level_int):
+def correct_guess(guess,goal,level):
     try:
         guess_int = int(guess)
     except ValueError:
         return False
     else:
-        if not int(1)<=guess_int<=level_int:
+        if not 1<=guess_int<=int(level):
             return False
         elif guess_int < goal:
             print("Too small!")

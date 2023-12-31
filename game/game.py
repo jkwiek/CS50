@@ -1,12 +1,12 @@
 import random
 
-def validate(input):
+def valid(input):
     try:
         input = int(input)
         return input
     except ValueError:
-        return None
-while level = None:
+        return False
+while valid(input) = False:
     level = input("Level: ")
     validate(level)
     if level > 0:

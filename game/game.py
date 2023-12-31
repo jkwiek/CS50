@@ -12,7 +12,7 @@ def valid_level(level):
 
 while not valid_level(level):
     level = input("Level: ")
-
+        while not valid_level(level):
 
 goal = random.randint(1,level)
 

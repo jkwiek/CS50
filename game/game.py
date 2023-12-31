@@ -8,11 +8,16 @@ def valid_level(level):
     else:
         if level <= 0:
             return False
+def valid_goal(goal):
+    try:
+        guess = int(level)
+    except ValueError:
+        return False
+    
 
-
-while not valid_level(level):
-    level = input("Level: ")
-        while not valid_level(level):
+level = input("Level: ")
+    while not valid_level(level):
+        level = input("Level: ")
 
 goal = random.randint(1,level)
 

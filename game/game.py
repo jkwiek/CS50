@@ -7,7 +7,7 @@ def main():
     goal = random.randint(1,int(level))
 
     guess = input("Guess: ")
-    while correct_guess(guess) == False:
+    while correct_guess(guess,goal,level) == False:
         guess = input("Guess: ")
 
     print("Just right!")
@@ -22,7 +22,7 @@ def valid_level(level):
             return False
         else:
             return True
-def correct_guess(guess):
+def correct_guess(guess,goal,level):
     try:
         guess_int = int(guess)
     except ValueError:
@@ -38,7 +38,6 @@ def correct_guess(guess):
             return False
         else:
             return True
-
-
+main()
 
 

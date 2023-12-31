@@ -24,13 +24,13 @@ def correct_guess(guess):
             return False
 
 level = input("Level: ")
-while not valid_level(level):
+while valid_level(level) == False:
     level = input("Level: ")
 
 goal = random.randint(1,level)
 
 guess = input("Guess: ")
-while not correct_guess(guess):
+while correct_guess(guess) == False:
     guess = input("Guess: ")
 
 print("Just right!")

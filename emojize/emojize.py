@@ -1,5 +1,5 @@
 import emoji
 import requests
 
-emoji_requested = input("Input: ")
-emoji.emojize()
+text = input("Input: ").split
+emoji.emojize(f"{text})

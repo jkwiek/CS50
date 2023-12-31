@@ -1,5 +1,4 @@
 import random
-
 def main():
     level = input("Level: ")
     while valid_level(level) == False:
@@ -39,6 +38,7 @@ def correct_guess(guess):
             return False
         else:
             return True
-main()
+
+
 
 

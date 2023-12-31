@@ -9,13 +9,12 @@ conversion_factor = conversion_factor["USD"]
 conversion_factor = conversion_factor["rate_float"]
 
 
-try:
-    n = float(sys.argv[1])
-    print(n)
-if ValueError:
+n = sys.argv[1]
+
+if n.isdigit():
     print("Command-line argument is not a number")
     sys.exit
-elif IndexError:
+elif len(sys.argv) != 2:
     print("Missing command-line argument")
     sys.exit
 else:

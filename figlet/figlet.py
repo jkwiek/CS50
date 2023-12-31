@@ -4,7 +4,7 @@ import random
 
 figlet = Figlet()
 
-fonts = [figlet.getFonts()]
+fonts = figlet.getFonts()
 
 if len(sys.argv) == 1:
     f = random.choice(fonts)
@@ -18,4 +18,4 @@ else:
 
 figlet.setFont(font=f)
 text = input("Input: ")
-print(f"Output: {figlet.renderText(text)}")
+print("Output:",figlet.renderText(text), sep = "\n")

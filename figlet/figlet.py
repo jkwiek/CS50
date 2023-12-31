@@ -2,7 +2,7 @@ import pyfiglet
 import sys
 import random
 
-fonts = []
+fonts = [pyfiglet.figlet]
 
 if len(sys.argv) == 1:
     print("random")

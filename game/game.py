@@ -1,16 +1,17 @@
 import random
-while True:
-    try:
-        level = int(input("Level: "))
-        goal = random.randint(1,level)
-        if level <=0:
-            continue
+
+def validate(input):
+
+
+try:
+    level = int(input("Level: "))
+    if level <=0:
+        continue
     except ValueError:
         continue
     else:
-        break
+        goal = random.randint(1,level)
 
-while True:
     try:
         guess = int(input("Guess: "))
         if not 1<=guess<=level:

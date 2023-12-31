@@ -4,6 +4,7 @@ import random
 
 figlet = Figlet()
 
+
 fonts = figlet.getFonts()
 
 if len(sys.argv) == 1:

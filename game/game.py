@@ -1,5 +1,18 @@
 import random
 
+def valid_level(level):
+    try:
+        level = int(level)
+    except ValueError:
+        return False
+    else:
+        if level <= 0:
+            return False
+
+
+while not valid_level(level):
+    level = input("Level: ")
+
 
 goal = random.randint(1,level)
 

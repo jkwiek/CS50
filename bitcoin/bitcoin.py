@@ -1,5 +1,4 @@
 import sys
-import json
 import requests
 
 response = requests.get(" https://api.coindesk.com/v1/bpi/currentprice.json")
@@ -11,7 +10,7 @@ conversion_factor = conversion_factor["rate_float"]
 
 
 
-if len(sys.argv) != 2:
+if len(sys.argv) < 2:
     print("Missing command-line argument")
     sys.exit
 elif not sys.argv[1].replace(".", "", 1).isdigit():

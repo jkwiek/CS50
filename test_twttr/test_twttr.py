@@ -1,6 +1,7 @@
 from twttr import shorten
 
-def test_allLower
+def test_allLower:
+    at
 
 def test_allUpper
 

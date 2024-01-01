@@ -1,4 +1,6 @@
 import random
+import sys
+
 def main():
     level = input("Level: ")
     while valid_level(level) == False:
@@ -10,7 +12,7 @@ def main():
     while correct_guess(guess,goal,level) == False:
         guess = input("Guess: ")
 
-    print("Just right!")
+    sys.exit("Just Right!")
 
 def valid_level(level):
     try:

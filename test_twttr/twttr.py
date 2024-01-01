@@ -1,9 +1,9 @@
 def main():
-    ...
+    input = input("Input: ")
 
 
 def shorten(word):
-    ...
+    input
 
 
 if __name__ == "__main__":

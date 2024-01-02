@@ -16,7 +16,7 @@ def is_valid(s):
         if c.isdigit():
             if c == "0":
                 return False
-            numbers = s.split(sep = c)[1]
+            numbers = s.split(sep = c, maxsplit=1)[1]
             if not numbers.isdigit():
                 return False
     else:
@@ -24,5 +24,6 @@ def is_valid(s):
 
 if __name__ == "__main__":
     main()
+
 
 

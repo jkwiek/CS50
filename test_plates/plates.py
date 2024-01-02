@@ -14,13 +14,11 @@ def is_valid(s):
         return False
     for c in s:
         if c.isdigit():
-        if c == "0":
-            return False
-        numbers = s.split(sep = c)[1]
+            if c == "0":
+                return False
+            numbers = s.split(sep = c)[1]
             if not numbers.isdigit():
                 return False
-        elif not s.isalpha():
-            return False
     else:
         return True
 

@@ -2,8 +2,8 @@ from fuel import convert, gauge
 import pytest
 
 def test_convert():
-    assert convert("1/2") == "50"
-    assert convert("1/3") == "33"
+    assert convert("1/2") == 50
+    assert convert("1/3") == 33
     with pytest.raises(ValueError):
         convert("5/2")
         convert("3.4/5")

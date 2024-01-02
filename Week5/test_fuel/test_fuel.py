@@ -8,6 +8,9 @@ def test_gauge():
     assert gauge(99) == "F"
     assert gauge(50) == "50%"
 
+def test_convert():
+    assert convert("1/2") == 50
+    assert convert("1/3") == 33
 
 def test_convert_valueError():
     with pytest.raises(ValueError):
@@ -18,4 +21,3 @@ def test_convert_valueError():
 def test_convert_ZeroError():
     with pytest.raises(ZeroDivisionError):
         assert convert("0/0")
-'

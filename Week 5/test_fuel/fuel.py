@@ -8,6 +8,7 @@ def convert(fraction):
         try:
             x,y = fraction.split("/")
             percentage = int(x) / int(y) * 100
+            percentage = round(percentage)
         except (ValueError, ZeroDivisionError):
             continue
         if percentage <0 or percentage >100:
@@ -23,7 +24,6 @@ def gauge(percentage):
         return "F"
 
     else:
-        percentage = round(percentage)
         return f"{percentage}%"
 
 if __name__ == "__main__":

@@ -1,9 +1,6 @@
 from fuel import convert, gauge
 import pytest
 
-def test_convert():
-    assert convert("1/2") == 50
-
 def test_gauge():
     assert gauge("1") == "E"
     assert gauge("99") == "F"

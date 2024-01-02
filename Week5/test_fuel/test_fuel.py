@@ -11,7 +11,7 @@ def test_convert_valueError():
         assert convert("1/cat")
 def test_convert_ZeroError():
     with pytest.raises(ZeroDivisionError):
-        assert convert("1/0")
+        assert convert("0/0")
 def test_gauge():
     assert gauge("0") == "E"
     assert gauge("1") == "E"

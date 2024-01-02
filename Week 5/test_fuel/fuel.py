@@ -12,7 +12,7 @@ def convert(fraction):
             if percentage <0 or percentage >100:
                 raise ValueError
         except (ValueError, ZeroDivisionError):
-            main()
+            
         else:
             return percentage
 

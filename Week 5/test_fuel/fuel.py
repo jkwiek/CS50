@@ -9,9 +9,9 @@ def convert(fraction):
             x,y = fraction.split("/")
             percentage = int(x) / int(y) * 100
             percentage = int(round(percentage))
+            if percentage <0 or percentage >100:
+                raise ValueError
         except (ValueError, ZeroDivisionError):
-            continue
-        if percentage <0 or percentage >100:
             continue
         else:
             return percentage

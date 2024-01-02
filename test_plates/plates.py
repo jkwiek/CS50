@@ -8,6 +8,8 @@ def main():
 def is_valid(s):
     if lengthvalid(s) and beginningvalid(s) and numbersvalid(s) and charactersvalid(s):
         return True
+    else:
+        return False
 
 def lengthvalid(plate):
     if 2 <= len(plate) <= 6:
@@ -25,7 +27,7 @@ def numbersvalid(plate):
                 return True
         if plate.isalpha():
             return True
-        
+
 def charactersvalid(plate):
     if plate.isalnum():
         return True

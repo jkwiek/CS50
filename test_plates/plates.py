@@ -15,8 +15,9 @@ def is_valid(s):
     for c in s:
         if c.isdigit():
             numbers = s.split(sep = c, maxsplit=1)[1]
-            if c=="0" or not numbers.isdigit():
+            if not numbers.isdigit():
                 return False
+            
     else:
         return True
 

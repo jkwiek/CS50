@@ -6,22 +6,28 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    if not 2 <= len(s) <= 6:
-        return False
-    elif not s[:2].isalpha():
-        return False
-    elif not s.isalnum():
-        return False
-    for c in s:
+    if lengthvalid(s) and beginningvalid(s) and numbersvalid(s) and charactersvalid(s):
+        return True
+
+def lengthvalid(plate):
+    if 2 <= len(plate) <= 6:
+        return True
+
+def beginningvalid(plate):
+    if plate[:2].isalpha():
+        return True
+
+def numbersvalid(plate):
+    for c in plate:
         if c.isdigit():
-            numbers = s.split(sep = c,maxsplit=1)[1]
+            numbers = plate.split(sep = c,maxsplit=1)[1]
             if numbers.isdigit() and c != "0":
-                return None
-        if s.isalpha():
-            return None
-        else:
-            return False
-    else:
+                return True
+        if plate.isalpha():
+            return True
+        
+def charactersvalid(plate):
+    if plate.isalnum():
         return True
 
 if __name__ == "__main__":

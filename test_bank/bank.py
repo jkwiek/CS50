@@ -1,7 +1,7 @@
 def main():
     greeting = input("Greeting: ").strip().lower()
-    value = value(greeting)
-    print(f"${value}")
+    money = value(greeting)
+    print(f"${money}")
 
 def value(greeting):
     if greeting.startswith("hello") == True:

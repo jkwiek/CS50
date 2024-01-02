@@ -11,10 +11,9 @@ def main():
 def convert(fraction):
         x,y = fraction.split("/")
         percentage = int(x) / int(y) * 100
-            percentage = int(round(percentage))
-            if percentage <0 or percentage >100:
-                raise ValueError
-
+        percentage = int(round(percentage))
+        if percentage <0 or percentage >100:
+            raise ValueError
         else:
             return percentage
 

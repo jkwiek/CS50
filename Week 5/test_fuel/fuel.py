@@ -1,12 +1,11 @@
 def main():
-    fraction = input("Fraction: ")
     percentage = convert(fraction)
     print(gauge(percentage))
 
 def convert(fraction):
     while True:
         try:
-            x,y = fraction.split("/")
+            x,y = input("Fraction: ").split("/")
             percentage = int(x) / int(y) * 100
             percentage = int(round(percentage))
             if percentage <0 or percentage >100:

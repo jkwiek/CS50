@@ -13,6 +13,8 @@ def convert(fraction):
         x,y = fraction.split("/")
         percentage = int(x) / int(y) * 100
         percentage = int(round(percentage))
+        if y=="0" :
+            raise ZeroDivisionError
         if percentage <0 or percentage >100:
             raise ValueError
         else:

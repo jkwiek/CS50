@@ -11,6 +11,5 @@ def test_allUpper():
 def test_numbers():
     assert shorten("12345") == "12345"
 
-def test_mix():
-    assert shorten("Cs50") == "Cs50"
-    assert shorten("Friday13") == "Frdy13"
+def test_punctuation():
+    assert shorten("!&#=.?") == "!&#=.?"

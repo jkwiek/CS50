@@ -14,7 +14,7 @@ def convert(fraction):
         if percentage <0 or percentage >100:
             continue
         else:
-            return percentage
+            return int(percentage)
 
 def gauge(percentage):
     if percentage <= 1:

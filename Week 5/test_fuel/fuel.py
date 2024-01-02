@@ -6,7 +6,8 @@ def main():
         except (ValueError, ZeroDivisionError):
             continue
         else:
-            print(gauge(percentage))
+            break
+    print(gauge(percentage))
 
 def convert(fraction):
         x,y = fraction.split("/")

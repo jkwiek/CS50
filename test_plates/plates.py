@@ -10,6 +10,8 @@ def is_valid(s):
         return False
     elif not s[:2].isalpha():
         return False
+    elif not s.isalnum():
+        return False
     for c in s:
         if c.isdigit():
             numbers = s.split(sep = c,maxsplit=1)[1]
@@ -17,8 +19,6 @@ def is_valid(s):
                 return False
         elif not s.isalpha():
             return False
-    elif not s.isalnum():
-        return False
     else:
         return True
 

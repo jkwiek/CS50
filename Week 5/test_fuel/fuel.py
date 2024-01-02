@@ -4,7 +4,6 @@ def main():
     print(gauge(percentage))
 
 def convert(fraction):
-    while True:
         try:
             x,y = fraction.split("/")
             percentage = int(x) / int(y) * 100

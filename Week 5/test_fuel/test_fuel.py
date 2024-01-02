@@ -1,12 +1,15 @@
 from fuel import convert, gauge
+import pytest
 
 def test_convert():
-    assert convert("1/2") == "50"
-    assert convert("1/3") == "33"
-    convert("5/2") raises ValueError
-    convert("3.4/5") raises ValueError
-    convert("1/cat") raises ValueError
-    convert("1/0") raises ZeroDivisionError
+    assert convert("1/2") == 50
+    assert convert("1/3") == 33
+    with pytest.raises(ValueError):
+        convert("5/2")
+        convert("3.4/5")
+        convert("1/cat")
+    with pytest.raises(ZeroDivisionError):
+        convert("1/0")
 def test_gauge():
     assert gauge("0") == "E"
     assert gauge("1") == "E"
@@ -19,3 +22,5 @@ def test_gauge():
 #"E" if that int is less than or equal to 1,
 #"F" if that int is greater than or equal to 99,
 #and "Z%" otherwise, wherein Z is that same int.
+
+

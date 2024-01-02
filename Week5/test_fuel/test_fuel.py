@@ -18,3 +18,4 @@ def test_convert_valueError():
 def test_convert_ZeroError():
     with pytest.raises(ZeroDivisionError):
         assert convert("0/0")
+'

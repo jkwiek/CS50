@@ -6,7 +6,7 @@ if len(sys.argv) == 2:
     if not request.endswith(".csv"):
         sys.exit("Not a CSV file")
     try:
-        with open(input) as file:
+        with open(request) as file:
             print(tabulate(file,headers="firstrow",tablefmt="grid"))
     except FileNotFoundError:
         sys.exit("File does not exist")

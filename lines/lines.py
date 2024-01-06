@@ -9,10 +9,10 @@ if len(sys.argv) == 2:
         with open(request) as file:
             for line in file:
                 if not line.lstrip().startswith("#") and not line.strip()=="":
-                    lines+=1
-            print(total_lines)
-        except FileNotFoundError:
-            sys.exit("File does not exist")
+                    total_lines+=1
+        print(total_lines)
+    except FileNotFoundError:
+        sys.exit("File does not exist")
 
 elif len(sys.argv) == 1:
     sys.exit("Too few command-line arguments")

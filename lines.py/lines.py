@@ -1,2 +1,5 @@
 import sys
-file = 
+while True
+    try:
+        file = sys.argv[1]
+    except 

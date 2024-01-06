@@ -2,7 +2,7 @@ import sys
 
 if len(sys.argv) == 2:
     request = sys.argv[1]
-    if request.split(".")[1] != "py":
+    if not request.endswith("py"):
         sys.exit("Not a Python file")
     try:
         total_lines = 0

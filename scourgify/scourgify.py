@@ -2,8 +2,8 @@ import sys
 
 
 if len(sys.argv) == 2:
-    request = sys.argv[1]
-    if not request.endswith(".csv"):
+    input, output = sys.argv[1][2]
+    if not input.endswith(".csv") and output.endswith(".csv"):
         sys.exit("Not a CSV file")
     try:
         with open(request) as file:

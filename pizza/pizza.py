@@ -4,7 +4,7 @@ from tabulate import tabulate
 if len(sys.argv) == 2:
     request = sys.argv[1]
     if not request.endswith(".csv"):
-        sys.exit("Not a Python file")
+        sys.exit("Not a CSV file")
     try:
         with open(input) as file:
             print(tabulate(file,headers="firstrow",tablefmt="grid"))

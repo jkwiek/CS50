@@ -7,7 +7,7 @@ if len(sys.argv) == 2:
     except FileNotFoundError:
         sys.exit("File does not exist")
     else:
-        if file.split(".")[1] != "py":
+        if file_name.split(".")[1] != "py":
             sys.exit("Not a Python file")
         else:
             #figure out a way to make the file be found not just within the folder but generally

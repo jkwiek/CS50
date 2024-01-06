@@ -6,8 +6,10 @@ if len(sys.argv) == 2:
     except FileNotFoundError:
         sys.exit("File does not exist")
     else:
-        if file.split(".")[1] =! "py":
-            sys.exit("F)
+        if file.split(".")[1] != "py":
+            sys.exit("Not a Python file")
+        else:
+            
 elif len(sys.argv) == 1:
     sys.exit("Too few command-line arguments")
 elif len(sys.argv) > 2:

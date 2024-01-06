@@ -3,7 +3,7 @@ from tabulate import tabulate
 
 if len(sys.argv) == 2:
     request = sys.argv[1]
-    if request.split(".")[1] != "csv":
+    if not request.endswith(".csv"):
         sys.exit("Not a Python file")
     try:
         with open(input) as file:

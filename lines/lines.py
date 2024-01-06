@@ -1,5 +1,5 @@
 import sys
-def main():
+
     if len(sys.argv) == 2:
         request = sys.argv[1]
         if request.split(".")[1] != "py":
@@ -23,5 +23,3 @@ def main():
         sys.exit("Too many command-line arguments")
 
 
-if __name__ == "__main__":
-    main()

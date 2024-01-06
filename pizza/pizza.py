@@ -9,7 +9,7 @@ if len(sys.argv) == 2:
         with open(request) as file:
             table = []
             for line in file:
-                row = line.split(",")
+                row = line.rstrip().split(",")
                 table.append(row)
             print(tabulate(table,headers="firstrow",tablefmt="grid"))
     except FileNotFoundError:

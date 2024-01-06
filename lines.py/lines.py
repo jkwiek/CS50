@@ -9,7 +9,9 @@ if len(sys.argv) == 2:
         if file.split(".")[1] != "py":
             sys.exit("Not a Python file")
         else:
-            
+            #figure out a way to make the file be found not just within the folder but generally
+            for line in file:
+                
 elif len(sys.argv) == 1:
     sys.exit("Too few command-line arguments")
 elif len(sys.argv) > 2:

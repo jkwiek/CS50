@@ -13,7 +13,7 @@ def main():
                 #figure out a way to make the file be found not just within the folder but generally
             with open(request) as file:
                 for line in file:
-                    if not line.lstrip().startswith("#" or " "):
+                    if not line.lstrip().startswith("#") and not line.strip()=="":
                         lines.append(line)
             print(len(lines))
 

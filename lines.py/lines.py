@@ -12,7 +12,7 @@ if len(sys.argv) == 2:
             #figure out a way to make the file be found not just within the folder but generally
         with open(request) as file:
             for line in file:
-                if not line.lstrip().startswith("#"):
+                if not line.lstrip().startswith("#" or ""):
                     lines.append(line)
         print(len(lines))
 

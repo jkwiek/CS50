@@ -7,7 +7,9 @@ if len(sys.argv) == 2:
         sys.exit("Not a CSV file")
     try:
         with open(request) as file:
-            table = []
+            table = {}
+            for line in file:
+                
             print(tabulate(file,headers="firstrow",tablefmt="grid"))
     except FileNotFoundError:
         sys.exit("File does not exist")

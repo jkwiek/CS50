@@ -3,6 +3,7 @@ if len(sys.argv) == 2:
     request = sys.argv[1]
     try:
         file = open(request)
+        lines = []
     except FileNotFoundError:
         sys.exit("File does not exist")
     else:
@@ -10,8 +11,13 @@ if len(sys.argv) == 2:
             sys.exit("Not a Python file")
         else:
             #figure out a way to make the file be found not just within the folder but generally
-            for line in file:
-                
+            with open(request) as file:
+                for line in file:
+                    if not line.lstrip().startswith("#"):
+                        lines.append(line)
+
+            print(len(lines))
+
 elif len(sys.argv) == 1:
     sys.exit("Too few command-line arguments")
 elif len(sys.argv) > 2:

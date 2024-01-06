@@ -7,7 +7,7 @@ if len(sys.argv) == 2:
         sys.exit("Not a Python file")
     try:
         with open(input) as file:
-            table = fil
+            table = []
             tabulate(file, headers = "firstrow" tablefmt="grid"))
     except FileNotFoundError:
         sys.exit("File does not exist")

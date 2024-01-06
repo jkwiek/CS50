@@ -4,7 +4,7 @@ import sys
 if len(sys.argv) == 2:
     input, output = sys.argv[1][2]
     try:
-        with open(request) as file:
+        with open(input) as file:
             table = []
             for line in file:
                 row = line.rstrip().split(",")

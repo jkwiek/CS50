@@ -1,8 +1,8 @@
 import sys
 
 
-if len(sys.argv) == 2:
-    input, output = sys.argv[1][2]
+if len(sys.argv) == 3:
+    input, output = sys.argv[0], sys.argv[1]
     if not input.endswith(".csv") and not output.endswith(".csv"):
         sys.exit("Not a CSV file")
     try:
@@ -14,7 +14,7 @@ if len(sys.argv) == 2:
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
 
-elif len(sys.argv) == 1:
+elif len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")
-elif len(sys.argv) > 2:
+elif len(sys.argv) > 3:
     sys.exit("Too many command-line arguments")

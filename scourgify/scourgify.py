@@ -5,11 +5,7 @@ if len(sys.argv) == 2:
     input, output = sys.argv[1][2]
     try:
         with open(input) as file:
-            table = []
-            for line in file:
-                row = line.rstrip().split(",")
-                table.append(row)
-            print(tabulate(table,headers="firstrow",tablefmt="grid"))
+            
     except FileNotFoundError:
         sys.exit("File does not exist")
 

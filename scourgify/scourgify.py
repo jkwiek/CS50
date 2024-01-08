@@ -10,6 +10,8 @@ if len(sys.argv) == 2:
             students = []
             for line in file:
                 name, house =
+                last, first = name.split(",")
+                print(first, last)
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
 

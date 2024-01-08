@@ -8,8 +8,8 @@ if len(sys.argv) == 2:
     try:
         with open(request) as file:
             table = []
-            for line in file:
-                row = line.rstrip().split(",")
+            for row in file:
+                row = row.rstrip().split(",")
                 table.append(row)
             print(tabulate(table,headers="firstrow",tablefmt="grid"))
     except FileNotFoundError:

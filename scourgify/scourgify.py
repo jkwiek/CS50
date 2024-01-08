@@ -7,7 +7,9 @@ if len(sys.argv) == 2:
         sys.exit("Not a CSV file")
     try:
         with open(input) as file:
-            
+            students = []
+            for line in file:
+                name, house =
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
 

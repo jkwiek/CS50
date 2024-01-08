@@ -9,7 +9,7 @@ if len(sys.argv) == 2:
         with open(input) as file:
             students = []
             for line in file:
-                name, house =
+                name, house = 
                 last, first = name.split(",")
                 print(first, last)
     except FileNotFoundError:

@@ -7,9 +7,9 @@ if len(sys.argv) == 2:
         sys.exit("Not a CSV file")
     try:
         with open(input) as file:
-
+        
     except FileNotFoundError:
-        sys.exit("File does not exist")
+        sys.exit(f"Could not read {input}")
 
 elif len(sys.argv) == 1:
     sys.exit("Too few command-line arguments")

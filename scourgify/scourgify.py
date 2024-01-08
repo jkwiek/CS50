@@ -7,7 +7,7 @@ if len(sys.argv) == 2:
         sys.exit("Not a CSV file")
     try:
         with open(input) as file:
-        
+            
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
 

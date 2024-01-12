@@ -7,7 +7,7 @@ if len(sys.argv) == 3:
         with open(input) as file:
             students = []
             for line in file:
-                last, first =  line["name"].split(",")
+                last, first =  line["name].split(",")
                 print(first, last)
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")

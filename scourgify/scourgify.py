@@ -5,10 +5,12 @@ if len(sys.argv) == 3:
     input, output = sys.argv[1], sys.argv[2]
     try:
         with open(input) as file:
+            reader = csv.reader(file)
             students = []
-            for line in file:
-                name = line.d
-
+            for line in reader:
+                name, house = reader.split(",")
+                last, first = name.split(",")
+                print(last)
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
     finally:

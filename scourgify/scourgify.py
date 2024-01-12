@@ -8,7 +8,6 @@ if len(sys.argv) == 3:
             students = []
             for line in file:
                 name, house = line.split(",")
-                last, first = name.split(",")
                 student = {"first":first, "last":last, "house":house}
                 students.append(student)
 

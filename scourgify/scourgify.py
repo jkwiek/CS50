@@ -5,7 +5,7 @@ if len(sys.argv) == 3:
     input, output = sys.argv[1], sys.argv[2]
     try:
         with open(input) as file:
-            students = []
+            csv>>tudents = []
             for line in file:
                 name, house = line.split(",")
                 last, first = name.split(",")

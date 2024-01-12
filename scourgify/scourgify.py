@@ -1,11 +1,11 @@
 import sys
-
+import csv
 
 if len(sys.argv) == 3:
     input, output = sys.argv[1], sys.argv[2]
     try:
         with open(input) as file:
-            csv>>tudents = []
+            students = []
             for line in file:
                 name, house = line.split(",")
                 last, first = name.split(",")
@@ -23,13 +23,4 @@ elif len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")
 elif len(sys.argv) > 3:
     sys.exit("Too many command-line arguments")
-
-#create dict students
-#rewrite
-    # with open("students.csv") as file:
-    reader = csv.DictReader(file)
-    for row in reader:
-        students.append({"name": row["name"], "home": row["home"]})
-
-for student in sorted(students, key=lambda student: student["name"]):
 

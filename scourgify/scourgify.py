@@ -7,7 +7,7 @@ if len(sys.argv) == 3:
         with open(input) as file:
             students = []
             for line in file:
-                line = name, 
+                name = line.d
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")

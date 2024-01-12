@@ -7,14 +7,16 @@ if len(sys.argv) == 3:
         with open(input) as file:
             students = []
             for line in file:
-                last, first, house = students["name"].split(",")
-                students.append(first, last, house)
-                
+                name, house = line.split(",")
+                last, first = name.split(",")
+                student = {"first":first, "last":last, "house":house}
+                students.append(student)
+
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
     finally:
         with open(output, "w") as file:
-            file.write(students)
+            
 
 elif len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")

@@ -7,10 +7,8 @@ if len(sys.argv) == 3:
         with open(input) as file:
             students = []
             for line in file:
-                name, house = line.split(",")
-                first, last = name.split(",")
-                student = {"first":first, "last":last, "house":house}
-                students.append(student)
+                
+
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")

@@ -16,8 +16,8 @@ if len(sys.argv) == 3:
         sys.exit(f"Could not read {input}")
     finally:
         with open(output, "w") as file:
-            writer = csv.DictWriter(file, fieldnames=["name", "home"])
-            writer.writerow({"first": first, "last": last, "house": house})
+            write(students)
+
 
 elif len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")

@@ -8,8 +8,8 @@ if len(sys.argv) == 3:
             reader = csv.reader(file)
             students = []
             for line in reader:
-                name, house = reader.split(",")
-                last, first = name.split(",")
+                name, house = str(reader).split(",")
+                last, first = str(name).split(",")
                 print(last)
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")

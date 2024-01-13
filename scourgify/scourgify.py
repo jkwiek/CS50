@@ -18,8 +18,8 @@ if len(sys.argv) == 3:
         sys.exit(f"Could not read {input}")
     finally:
         with open(output, "w") as file:
-            writer = csv.writer(file)
-            write(students)
+            write = csv.writer(file)
+            write.writerows(students)
 
 
 

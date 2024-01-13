@@ -9,6 +9,7 @@ if len(sys.argv) == 3:
             students = []
             for line in reader:
                 name, house = line
+                name = name.strip('\"')
                 last, first = name.split(",")
 
     except FileNotFoundError:

@@ -10,8 +10,8 @@ if len(sys.argv) == 3:
             for line in reader:
                 name, house = line
                 print(name)
-                name = name.strip('\"')
-                last, first = name.split(",")
+                #name = name.strip('\"')
+                #last, first = name.split(",")
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")

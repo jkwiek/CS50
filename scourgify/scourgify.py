@@ -5,8 +5,7 @@ if len(sys.argv) == 3:
     input, output = sys.argv[1], sys.argv[2]
     try:
         with open(input) as file:
-            reader = csv.reader(file)
-            next(reader)
+            reader = csv.DictReader(file, fieldnames= "name" "house")
             for line in reader:
                 name, house = line
                 name = name.strip('\"')

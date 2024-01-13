@@ -9,6 +9,7 @@ if len(sys.argv) == 3:
             students = []
             for line in reader:
                 name, house = line
+                print(name)
                 name = name.strip('\"')
                 last, first = name.split(",")
 

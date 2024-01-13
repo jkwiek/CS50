@@ -16,7 +16,7 @@ if len(sys.argv) == 3:
     finally:
         with open(output, "w") as file:
             write = csv.writer(file)
-            write.writerows(first, last, house)
+            write.writerow([first, last, house])
 
 
 

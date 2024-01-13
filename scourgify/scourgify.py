@@ -8,17 +8,15 @@ if len(sys.argv) == 3:
             reader = csv.DictReader(file, fieldnames= ["name", "house"])
             for line in reader:
                 name = line["name"]
-                house = line["house"].
+                house = line["house"]
                 name = name.strip('\"')
                 last, first = name.split(",")
+                with open(output, "w") as file:
+                    write = csv.writer(file)
+                    write.writerow([first, last, house])
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
-    finally:
-        with open(output, "w") as file:
-            write = csv.writer(file)
-            write.writerow([first, last, house])
-
 
 
 elif len(sys.argv) < 3:

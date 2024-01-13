@@ -10,15 +10,15 @@ if len(sys.argv) == 3:
             students = []
             for line in reader:
                 name, house = line
-                print(name)
-                #name = name.strip('\"')
-                #last, first = name.split(",")
+                name = name.strip('\"')
+                last, first = name.split(",")
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
     finally:
         with open(output, "w") as file:
             write = csv.writer(file)
+            
 
 elif len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")

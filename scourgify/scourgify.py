@@ -7,11 +7,11 @@ if len(sys.argv) == 3:
         with open(input) as file:
             reader = csv.DictReader(file, fieldnames= ["name", "house"])
             for line in reader:
-                name = line["name"]
                 house = line["house"]
+                name = line["name"]
                 name = name.strip('\"')
                 last, first = name.split(",")
-                with open(output, "w") as file:
+                with open(output, "a") as file:
                     write = csv.writer(file)
                     write.writerow([first, last, house])
 

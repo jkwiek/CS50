@@ -6,6 +6,7 @@ if len(sys.argv) == 3:
     try:
         with open(input) as file:
             reader = csv.reader(file)
+            next(reader)
             students = []
             for line in reader:
                 name, house = line

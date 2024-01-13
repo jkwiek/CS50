@@ -14,7 +14,7 @@ if len(sys.argv) == 3:
                 last, first = name.split(",")
                 with open(output, "a") as file:
                     write = csv.writer(file)
-                    write.writerow([first, last, house])
+                    write.writerow([first, last, house], sep = "")
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")

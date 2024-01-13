@@ -13,7 +13,7 @@ if len(sys.argv) == 3:
                 name = name.strip('\"')
                 last, first = name.split(",")
                 with open(output, "a") as file:
-                    write = csv.DictWriter(file)
+                    write = csv.writer(file)
                     write.writerow([first, last, house])
 
     except FileNotFoundError:

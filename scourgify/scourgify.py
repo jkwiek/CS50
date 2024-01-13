@@ -7,7 +7,8 @@ if len(sys.argv) == 3:
         with open(input) as file:
             reader = csv.DictReader(file, fieldnames= ["name", "house"])
             for line in reader:
-                name, house = line
+                name = line["name"]
+                house = line["house"].
                 name = name.strip('\"')
                 last, first = name.split(",")
 

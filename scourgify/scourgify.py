@@ -7,19 +7,17 @@ if len(sys.argv) == 3:
         with open(input) as file:
             reader = csv.reader(file)
             next(reader)
-            students = []
             for line in reader:
                 name, house = line
                 name = name.strip('\"')
                 last, first = name.split(",")
-                students.append(first, last, house)
 
     except FileNotFoundError:
         sys.exit(f"Could not read {input}")
     finally:
         with open(output, "w") as file:
             write = csv.writer(file)
-            write.writerows(students)
+            write.writerows(first, last, house)
 
 
 

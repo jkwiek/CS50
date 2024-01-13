@@ -6,7 +6,7 @@ if len(sys.argv) == 3:
     try:
         with open(input) as file:
             reader = csv.DictReader(file, fieldnames= ["name", "house"])
-            return(reader)
+            next(reader)
             for line in reader:
                 house = line["house"]
                 name = line["name"]
